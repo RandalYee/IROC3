@@ -1,0 +1,6 @@
+﻿<%@ Register Tagprefix="Selectors" Namespace="IROC2" %>
+
+<%@ Register Assembly="AjaxControlToolkit" Namespace="AjaxControlToolkit" TagPrefix="asp" %>
+<%@ Control Language="vb" AutoEventWireup="false" CodeFile="Menu_Item_Highlighted.ascx.vb" Inherits="IROC2.UI.Menu_Item_Highlighted" %>
+<%@ Register Tagprefix="BaseClasses" Namespace="BaseClasses.Web.UI.WebControls" Assembly="BaseClasses" %><table cellspacing="0" cellpadding="0" border="0" onmouseover="this.style.cursor='pointer'; return true;" onclick="clickLinkButtonText(this, event);"><tr><td class="moTL"><img src="../Images/space.gif" height="5" width="5" alt="" /></td><td class="moT"><img src="../Images/space.gif" height="5" width="2" alt="" /></td><td class="moTR"><img src="../Images/space.gif" height="5" width="5" alt="" /></td></tr><tr><td class="moL"><img src="../Images/space.gif" height="14" width="5" alt="" /></td><td class="moC"><asp:LinkButton CommandName="Redirect" runat="server" id="_Button" cssclass="menu">		
+	</asp:LinkButton></td><td class="moR"><img src="../Images/space.gif" height="14" width="5" alt="" /></td></tr><tr><td class="moBL"><img src="../Images/space.gif" height="3" width="5" alt="" /></td><td class="moB"><img src="../Images/space.gif" height="3" width="2" alt="" /></td><td class="moBR"><img src="../Images/space.gif" height="3" width="5" alt="" /></td></tr></table>

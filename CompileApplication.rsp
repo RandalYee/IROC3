@@ -1,0 +1,23 @@
+﻿#Begin CompileApplication.rsp
+
+/nologo
+/utf8output-                         #DEFAULT
+/verbose-                            #DEFAULT
+/optimize+                           #non-DEFAULT
+/target:library
+/delaysign-                          #DEFAULT
+/libpath:.\bin\
+/reference:BaseClasses.dll,System.dll,System.Data.dll,System.Drawing.dll,System.Web.dll,System.Xml.dll
+/imports:Microsoft.VisualBasic,System,System.Collections,System.Configuration,System.Data,System.Drawing,System.Web,System.Web.UI,System.Web.UI.HtmlControls,System.Web.UI.WebControls
+/debug-                              #DEFAULT
+#/nowarn
+#/quiet
+/removeintchecks-                    #DEFAULT
+/warnaserror-                        #DEFAULT
+/optionexplicit+
+/optionstrict+
+/optioncompare:binary                #DEFAULT
+/define:DEBUG=1,TRACE=1
+#/baseaddress:0x11000000
+#/baseaddress:&H11000000
+#End CompileApplication.rsp

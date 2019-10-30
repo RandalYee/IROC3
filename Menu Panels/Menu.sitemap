@@ -1,0 +1,99 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<!-- 
+Each siteMapNode tag represents a menu item in the menu control. 
+The tags are case-sensitive and should contain the following case-sensitive attributes:
+  title: Text to be displayed for the menu item. Surround any part of the title to be retrieved from a RESX file with {}.
+  eg. title="{Menu:Add} Categories".
+	
+  desciption: Tool tip for the menu item. Surround any part of the title to be retrieved from a RESX file with {}.
+  eg. description="{Menu:Add} Categories".
+
+  url: The url value may be an empty string or may contain a unique value. The value should be one of the following types:
+      Absolute url: a complete path of the web page you want to display. 
+      eg: http://www.ironspeed.com
+      Relative url: url relative to application root. 
+      eg: ~/Categories/ShowCategoriesTablePage.aspx.
+      
+  imageUrl: The URL of the image to be displayed for each menu item.
+  eg. imageUrl="~/Images/MenuTopLevel.gif"
+
+  roles: A list of comma separated role ids defined as part of application's security (use role names as role ids
+  for Microsoft Active Directory and Microsoft AzMan Role management). To specify standard Iron Speed Designer roles, use:
+        Everyone: For all users.
+        NOT_ANONYMOUS: For signed in users only.
+        ANONYMOUS: For users who are not signed in.
+        NO_ACCESS: For none of the users.
+  The user should belong to one of the listed roles in order for the menu item to be displayed.
+	
+  order: (Please do not modify this attribute.) Specifies the order in which the elements are displayed. Changing the value 
+  of this attribute will not affect the order of the menu items on the display. They are used whenever a new menu item is 
+  inserted into the sitemap file to locate the position where the new menu item should be added.
+  -->
+<siteMap>
+  <siteMapNode>
+    <siteMapNode title="Request Search" description="" url="~/Request_Master/Group-By-Request-Master-Table.aspx" imageUrl="../Images/MLMBullet2.gif" roles="NOT_ANONYMOUS" order="1" />
+    <siteMapNode title="{Menu:More}" description="{Menu:More}" url="" imageUrl="" roles="1,34" order="2">
+      <siteMapNode title="Comments" description="Comments" url="~/Comments/Show-Comments-Table.aspx?" imageUrl="../Images/MLMBullet1.gif" roles="1,4" order="1">
+        <siteMapNode title="{Menu:Add} Comments" description="{Menu:Add} Comments" url="~/Comments/Add-Comments.aspx" imageUrl="../Images/MLMBullet2.gif" roles="" order="1" />
+        <siteMapNode title="{Menu:Add} Comments 1" description="{Menu:Add} Comments 1" url="~/Comments/Add-Comments1.aspx" imageUrl="../Images/MLMBullet2.gif" roles="" order="2" />
+        <siteMapNode title="{Menu:Add} Comments 2" description="{Menu:Add} Comments 2" url="~/Comments/Add-Comments2.aspx" imageUrl="../Images/MLMBullet2.gif" roles="" order="3" />
+        <siteMapNode title="{Menu:GroupBy} Comments" description="{Menu:GroupBy} Comments" url="~/Comments/Group-By-Comments-Table.aspx" imageUrl="../Images/MLMBullet2.gif" roles="" order="4" />
+        <siteMapNode title="{Menu:GroupBy} Comments 1" description="{Menu:GroupBy} Comments 1" url="~/Comments/Group-By-Comments-Table1.aspx" imageUrl="../Images/MLMBullet2.gif" roles="" order="5" />
+        <siteMapNode title="{Menu:GroupBy} Comments 2" description="{Menu:GroupBy} Comments 2" url="~/Comments/Group-By-Comments-Table2.aspx" imageUrl="../Images/MLMBullet2.gif" roles="" order="6" />
+        <siteMapNode title="{Menu:Show} Comments" description="{Menu:Show} Comments" url="~/Comments/Show-Comments-Table.aspx" imageUrl="../Images/MLMBullet2.gif" roles="" order="7" />
+        <siteMapNode title="{Menu:Show} Comments 1" description="{Menu:Show} Comments 1" url="~/Comments/Show-Comments-Table1.aspx" imageUrl="../Images/MLMBullet2.gif" roles="" order="8" />
+        <siteMapNode title="{Menu:Show} Comments 2" description="{Menu:Show} Comments 2" url="~/Comments/Show-Comments-Table2.aspx" imageUrl="../Images/MLMBullet2.gif" roles="" order="9" />
+      </siteMapNode>
+      <siteMapNode title="Contacts" description="Contacts" url="~/Contacts/Group-By-Contacts-Table1.aspx?" imageUrl="../Images/MLMBullet1.gif" roles="1,4" order="2">
+        <siteMapNode title="{Menu:Add} Contacts 1" description="{Menu:Add} Contacts 1" url="~/Contacts/Add-Contacts1.aspx" imageUrl="../Images/MLMBullet2.gif" roles="" order="1" />
+        <siteMapNode title="{Menu:Add} Contacts 2" description="{Menu:Add} Contacts 2" url="~/Contacts/Add-Contacts2.aspx" imageUrl="../Images/MLMBullet2.gif" roles="" order="2" />
+        <siteMapNode title="{Menu:Add} Contacts 3" description="{Menu:Add} Contacts 3" url="~/Contacts/Add-Contacts3.aspx" imageUrl="../Images/MLMBullet2.gif" roles="" order="3" />
+        <siteMapNode title="{Menu:GroupBy} Contacts 1" description="{Menu:GroupBy} Contacts 1" url="~/Contacts/Group-By-Contacts-Table1.aspx" imageUrl="../Images/MLMBullet2.gif" roles="" order="4" />
+        <siteMapNode title="{Menu:GroupBy} Contacts 2" description="{Menu:GroupBy} Contacts 2" url="~/Contacts/Group-By-Contacts-Table2.aspx" imageUrl="../Images/MLMBullet2.gif" roles="" order="5" />
+        <siteMapNode title="{Menu:GroupBy} Contacts 3" description="{Menu:GroupBy} Contacts 3" url="~/Contacts/Group-By-Contacts-Table3.aspx" imageUrl="../Images/MLMBullet2.gif" roles="" order="6" />
+        <siteMapNode title="{Menu:Show} Contacts 1" description="{Menu:Show} Contacts 1" url="~/Contacts/Show-Contacts-Table1.aspx" imageUrl="../Images/MLMBullet2.gif" roles="" order="7" />
+        <siteMapNode title="{Menu:Show} Contacts 2" description="{Menu:Show} Contacts 2" url="~/Contacts/Show-Contacts-Table2.aspx" imageUrl="../Images/MLMBullet2.gif" roles="" order="8" />
+      </siteMapNode>
+      <siteMapNode title="Franchise Number" description="Franchise Number" url="~/Franchise_Number/Show-Franchise-Number-Table.aspx?" imageUrl="../Images/MLMBullet1.gif" roles="1" order="3">
+        <siteMapNode title="{Menu:Add} Franchise Number" description="{Menu:Add} Franchise Number" url="~/Franchise_Number/Add-Franchise-Number.aspx" imageUrl="../Images/MLMBullet2.gif" roles="" order="1" />
+        <siteMapNode title="{Menu:GroupBy} Franchise Number" description="{Menu:GroupBy} Franchise Number" url="~/Franchise_Number/Group-By-Franchise-Number-Table.aspx" imageUrl="../Images/MLMBullet2.gif" roles="" order="2" />
+        <siteMapNode title="{Menu:Show} Franchise Number" description="{Menu:Show} Franchise Number" url="~/Franchise_Number/Show-Franchise-Number-Table.aspx" imageUrl="../Images/MLMBullet2.gif" roles="" order="3" />
+      </siteMapNode>
+      <siteMapNode title="Request Master" description="Request Master" url="~/Request_Master/Show-Request-Master-Table.aspx?" imageUrl="../Images/MLMBullet1.gif" roles="" order="4">
+        <siteMapNode title="{Menu:Add} Request Master 1" description="{Menu:Add} Request Master 1" url="~/Request_Master/Add-Request-Master1.aspx" imageUrl="../Images/MLMBullet2.gif" roles="" order="1" />
+        <siteMapNode title="{Menu:Add} Request Master 2" description="{Menu:Add} Request Master 2" url="~/Request_Master/Add-Request-Master2.aspx" imageUrl="../Images/MLMBullet2.gif" roles="" order="2" />
+        <siteMapNode title="{Menu:GroupBy} Request Master 1" description="{Menu:GroupBy} Request Master 1" url="~/Request_Master/Group-By-Request-Master-Table1.aspx" imageUrl="../Images/MLMBullet2.gif" roles="" order="3" />
+        <siteMapNode title="{Menu:GroupBy} Request Master 2" description="{Menu:GroupBy} Request Master 2" url="~/Request_Master/Group-By-Request-Master-Table2.aspx" imageUrl="../Images/MLMBullet2.gif" roles="" order="4" />
+        <siteMapNode title="{Menu:Show} Request Master" description="{Menu:Show} Request Master" url="~/Request_Master/Show-Request-Master-Table.aspx" imageUrl="../Images/MLMBullet2.gif" roles="" order="5" />
+        <siteMapNode title="{Menu:Show} Request Master 1" description="{Menu:Show} Request Master 1" url="~/Request_Master/Show-Request-Master-Table1.aspx" imageUrl="../Images/MLMBullet2.gif" roles="" order="6" />
+      </siteMapNode>
+      <siteMapNode title="Uploads" description="Uploads" url="~/Uploads/Show-Uploads-Table1.aspx?" imageUrl="../Images/MLMBullet1.gif" roles="1,4" order="5">
+        <siteMapNode title="{Menu:Add} Uploads 1" description="{Menu:Add} Uploads 1" url="~/Uploads/Add-Uploads1.aspx" imageUrl="../Images/MLMBullet2.gif" roles="" order="1" />
+        <siteMapNode title="{Menu:GroupBy} Uploads 1" description="{Menu:GroupBy} Uploads 1" url="~/Uploads/Group-By-Uploads-Table1.aspx" imageUrl="../Images/MLMBullet2.gif" roles="" order="2" />
+        <siteMapNode title="{Menu:GroupBy} Uploads 2" description="{Menu:GroupBy} Uploads 2" url="~/Uploads/Group-By-Uploads-Table2.aspx" imageUrl="../Images/MLMBullet2.gif" roles="" order="3" />
+        <siteMapNode title="{Menu:GroupBy} Uploads 3" description="{Menu:GroupBy} Uploads 3" url="~/Uploads/Group-By-Uploads-Table3.aspx" imageUrl="../Images/MLMBullet2.gif" roles="" order="4" />
+        <siteMapNode title="{Menu:Show} Uploads 1" description="{Menu:Show} Uploads 1" url="~/Uploads/Show-Uploads-Table1.aspx" imageUrl="../Images/MLMBullet2.gif" roles="" order="5" />
+      </siteMapNode>
+      <siteMapNode title="Agency" description="Entity" url="~/Enity/Show-Enity-Table.aspx?" imageUrl="../Images/MLMBullet1.gif" roles="1,4" order="6">
+        <siteMapNode title="{Menu:Add} Entity" description="{Menu:Add} Entity" url="~/Enity/Add-Enity.aspx" imageUrl="../Images/MLMBullet2.gif" roles="" order="1" />
+        <siteMapNode title="{Menu:GroupBy} Entity" description="{Menu:GroupBy} Enity" url="~/Enity/Group-By-Enity-Table.aspx" imageUrl="../Images/MLMBullet2.gif" roles="" order="2" />
+        <siteMapNode title="{Menu:Show} Entity" description="{Menu:Show} Entity" url="~/Enity/Show-Enity-Table.aspx" imageUrl="../Images/MLMBullet2.gif" roles="" order="3" />
+      </siteMapNode>
+      <siteMapNode title="Users" description="Users" url="~/Users/Show-Users-Table.aspx?" imageUrl="../Images/MLMBullet1.gif" roles="1,4" order="7">
+        <siteMapNode title="{Menu:Add} Users" description="{Menu:Add} Users" url="~/Users/Add-Users.aspx" imageUrl="../Images/MLMBullet2.gif" roles="" order="1" />
+        <siteMapNode title="{Menu:GroupBy} Users" description="{Menu:GroupBy} Users" url="~/Users/Group-By-Users-Table.aspx" imageUrl="../Images/MLMBullet2.gif" roles="" order="2" />
+        <siteMapNode title="{Menu:Show} Users" description="{Menu:Show} Users" url="~/Users/Show-Users-Table.aspx" imageUrl="../Images/MLMBullet2.gif" roles="" order="3" />
+      </siteMapNode>
+      <siteMapNode title="Users Role" description="Users Role" url="~/Users_Role/Show-Users-Role-Table.aspx?" imageUrl="../Images/MLMBullet1.gif" roles="1" order="8">
+        <siteMapNode title="{Menu:Add} Users Role" description="{Menu:Add} Users Role" url="~/Users_Role/Add-Users-Role.aspx" imageUrl="../Images/MLMBullet2.gif" roles="1" order="1" />
+        <siteMapNode title="{Menu:GroupBy} Users Role" description="{Menu:GroupBy} Users Role" url="~/Users_Role/Group-By-Users-Role-Table.aspx" imageUrl="../Images/MLMBullet2.gif" roles="1" order="2" />
+        <siteMapNode title="{Menu:Show} Users Role" description="{Menu:Show} Users Role" url="~/Users_Role/Show-Users-Role-Table.aspx" imageUrl="../Images/MLMBullet2.gif" roles="1" order="3" />
+      </siteMapNode>
+      <siteMapNode title="Role (Enntity, Type)" description="Role" url="~/Role/Show-Role-Table.aspx?" imageUrl="../Images/MLMBullet1.gif" roles="NO_ACCESS" order="9">
+        <siteMapNode title="{Menu:Add} Role" description="{Menu:Add} Role" url="~/Role/Add-Role.aspx" imageUrl="../Images/MLMBullet2.gif" roles="34" order="1" />
+        <siteMapNode title="Group By Role" description="" url="~/Role/Group-By-Role-Table.aspx" imageUrl="../Images/MLMBullet2.gif" roles="34" order="2" />
+        <siteMapNode title="{Menu:Show} Role" description="{Menu:Show} Role" url="~/Role/Show-Role-Table.aspx" imageUrl="../Images/MLMBullet2.gif" roles="1,34" order="3" />
+      </siteMapNode>
+    </siteMapNode>
+  </siteMapNode>
+</siteMap>

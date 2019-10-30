@@ -1,0 +1,2736 @@
+/**********************************************************************
+ * BaseStyles.LeftToRight.css                                         *
+ *                                                                    *
+ * This file contains the styles for Left to Right languages.         *
+ * This file will be copied to BaseStyles.css if you select a LTR     *
+ * language as the primary language of your application.              *
+ *                                                                    *
+ * Do not modify this file.  To override any of the styles, please    *
+ * modify the Styles.css file.                                        *
+ *                                                                    *
+ **********************************************************************/
+
+HTML { /* language direction flow of content on page */
+	direction: ltr;
+	}
+
+
+/**********************************************************************
+ * Button Styles                                                      *
+ **********************************************************************/
+a.button_link, .thc a.button_link, .tic a.button_link, .ttc a.button_link, .galleryttc a.button_link { /* link text of buttons (including those within column headers and data grid) */ 
+	color: #1c523e;
+	font-family: Verdana, Arial, Geneva, ms sans serif;
+	font-size: 11px;
+	font-weight: bold;
+	padding-left: 4px;
+	padding-right: 4px;
+	text-align: center;
+	text-decoration: none;
+	width: 100%;
+	}
+
+a.button_link:hover, .thc a.button_link:hover, .tic a.button_link:hover, .ttc a.button_link:hover, .galleryttc a.button_link:hover { /* link text of buttons (including those within column headers and data grid) hover state */
+	color: #bfd19c;
+	text-decoration: none;
+	}
+
+.prbggo a.button_link { /* link text of buttons within pagination row */
+	border: 0px;
+	color: #1c523e;
+	font-weight: normal;
+	padding-left: 0px;
+	padding-right: 0px;
+	text-transform: none;
+	white-space: nowrap;
+	}
+
+.prbggo a.button_link:hover { /* link text of buttons within pagination row hover state */
+	border: 0px;
+	color: #1c523e;
+	padding-left: 0px;
+	padding-right: 0px;
+	}
+
+.button-TL-white, .bTL { /* theme button top left edge */
+	background-image:url(../../Images/buttonTL.png);
+	background-position: bottom right;
+	background-repeat: no-repeat;
+	height: 3px;
+	width: 8px;
+	}
+.button-T-white, .bT { /* theme button top center edge */
+	background-image:url(../../Images/buttonT.png);
+	background-position: bottom center;
+	background-repeat: repeat-x;
+	height: 3px;
+	}
+.button-TR-white, .bTR { /* theme button top right edge */
+	background-image:url(../../Images/buttonTR.png);
+	background-position: bottom left;
+	background-repeat: no-repeat;
+	height: 3px;
+	width: 8px;
+	}
+.button-L-white, .bL { /* theme button left middle edge */
+	background-image:url(../../Images/buttonL.png);
+	background-position: center right;
+	background-repeat: repeat-y;
+	height: 16px;
+	width: 8px;
+	}
+.button-white, .bC { /* theme button center */
+	background-image:url(../../Images/buttonC.png);
+	height: 16px; 
+	padding-left: 2px;
+	padding-right: 2px;
+	vertical-align: bottom;
+	white-space: nowrap;
+	}
+.button-R-white, .bR { /* theme button right middle edge */
+	background-image:url(../../Images/buttonR.png);
+	background-position: center left;
+	background-repeat: repeat-y;
+	height: 16px; 
+	width: 8px;
+	}
+.button-BL-white, .bBL { /* theme button bottom left edge */
+	background-image:url(../../Images/buttonBL.png);
+	background-position: top right;
+	background-repeat: no-repeat;
+	height: 3px;
+	width: 8px;
+	}
+.button-B-white, .bB { /* theme button bottom center edge */
+	background-image:url(../../Images/buttonB.png);
+	background-position: top center;
+	background-repeat: repeat-x;
+	height: 3px;
+	}
+.button-BR-white, .bBR { /* theme button bottom right edge */
+	background-image:url(../../Images/buttonBR.png);
+	background-position: top left;
+	background-repeat: no-repeat;
+	height: 3px;
+	width: 8px;
+	}
+
+.bTLSpace { /* theme button top left buttress image */
+	display: none;
+	}
+
+.bTSpace { /* theme button top buttress image */
+	display: none;
+	}
+
+.bTRSpace { /* theme button top right buttress image */
+	display: none;
+	}
+
+.bLSpace { /* theme button left buttress image */
+	display: none;
+	}
+
+.bRSpace { /* theme button right buttress image */
+	display: none;
+	}
+
+.bBLSpace { /* theme button bottom left buttress image */
+	display: none;
+	}
+
+.bBSpace { /* theme button bottom buttress image */
+	display: none;
+	}
+
+.bBRSpace { /* theme button bottom right buttress image */
+	display: none;
+	}
+
+
+/**********************************************************************
+ * Multi-level Menu Styles                                            *
+ **********************************************************************/
+.MLMmenuAlign { /* horizontal menu container alignment */
+	/* background-color: #72a809; */
+	padding-top: 6px;
+	}
+
+.MLMmenu { /* horizontal menu container */
+	border-left: 1px dotted #cccccc;
+	}
+
+.MLMmenusub { /* horizontal submenu container (menu leaves) */
+	z-index: 100;
+	}
+
+.MLMmC { /* horizontal menu item link text */
+	/*
+	background-image: url(../../Images/MLMMenuBackground.Green.gif);
+	background-position: bottom center;
+	background-repeat: repeat-x;
+	*/
+	border-right: 1px dotted #cccccc;
+	color: #ffffff;
+	cursor: pointer !important;
+	font-family: Verdana, Arial, Geneva, ms sans serif;
+	font-size: 13px;
+	font-weight: bold;
+	height: 22px;
+	padding-bottom: 4px;
+	padding-left: 10px;
+	padding-right: 10px;
+	padding-top: 4px;
+	}
+
+.MLMmoC:hover, .MLMmoC:hover a, .MLMmoC { /* horizontal menu item link text hover state */
+	background-image: url(../../Images/MLMMenuOverBackground.gif);
+	background-position: center center;
+	background-repeat: repeat-x;
+	color: #1c523e;
+	}
+
+.MLMsubmC { /* horizontal submenu item link text */
+	background-color: #1c523e;
+	border-bottom: 1px solid #87af8b;
+	border-right: 1px solid #35465c;
+	color: #ffffff;
+	cursor: pointer !important;
+	font-family: Verdana, Arial, Geneva, ms sans serif;
+	font-size: 11px;
+	padding-bottom: 2px;
+	padding-left: 4px;
+	padding-right: 4px;
+	padding-top: 2px;
+	}
+
+.MLMsubmoC { /* horizontal submenu item link text hover state */
+	background-color: #f0f8de;
+	color: #1c523e;
+	}
+
+.MLMmbbg { /* horizontal menu bottom trim */
+	}
+
+.MLMmenuVAlign { /* vertical menu container alignment */
+	padding-left: 6px;
+	padding-right: 6px;
+	}
+
+.MLMmenuV { /* vertical menu container */
+	position: relative;
+	width: 137px;
+	}
+
+.MLMmenuVsub { /* vertical submenu container */
+	z-index: 100;
+	}
+
+.MLMmvC { /* vertical menu item link text */
+	border-bottom: 1px dotted #cccccc;
+	color: #ffffff;
+	cursor: pointer !important;
+	font-family: Verdana, Arial, Geneva, ms sans serif;
+	font-size: 13px;
+	font-weight: bold;
+	height: 22px;
+	padding-bottom: 4px;
+	padding-left: 10px;
+	padding-right: 10px;
+	padding-top: 4px;
+	}
+
+.MLMmvC:hover, .MLMmvC:hover a, .MLMmvoC { /* vertical menu item link text hover state */
+	background-image: url(../../Images/MLMMenuOverBackground.gif);
+	background-position: center center;
+	background-repeat: repeat-x;
+	color: #1c523e;
+	}
+
+.MLMsubmvC { /* vertical submenu item link text */
+	background-color: #1c523e;
+	border-bottom: 1px solid #87af8b;
+	border-right: 1px solid #35465c;
+	color: #ffffff;
+	cursor: pointer !important;
+	font-family: Verdana, Arial, Geneva, ms sans serif;
+	font-size: 11px;
+	padding-bottom: 2px;
+	padding-left: 4px;
+	padding-right: 4px;
+	padding-top: 2px;
+	}
+
+.MLMsubmvoC { /* vertical submenu item link text hover state */
+	background-color: #f0f8de;
+	color: #1c523e;
+	}
+
+.MLMmveTL { /* vertical menu top left edge */
+	}
+
+.MLMmveT { /* vertical menu top center edge */
+	}
+
+.MLMmveTR { /* vertical menu top right edge */
+	}
+
+.MLMmveBL { /* vertical menu bottom left edge */
+	}
+
+.MLMmveB { /* vertical menu bottom center edge */
+	}
+
+.MLMmveBR { /* vertical menu bottom right edge */
+	}
+
+
+/**********************************************************************
+ * Classic Menu Styles                                                *
+ **********************************************************************/
+.menus { /* horizontal menu container */
+	padding-top: 6px;
+	}
+
+.menusV { /* vertical menu container */
+	padding-left: 10px;
+	padding-right: 10px;
+	}
+
+.menu { /* horizontal/vertical menu item text */
+	font-family: Verdana, Arial, Geneva, ms sans serif;
+	font-size: 13px;
+	font-weight: bold;
+	}
+	
+a.menu { /* horizontal/vertical menu item link text */
+	color: #ffffff;
+	text-decoration: none;
+	width: 100%;
+	}
+
+a.menu:hover { /* horizontal/vertical menu item link text hover state */
+	color: #cccccc;
+	}
+
+.menu_on-TL, .moTL { /* horizontal menu highlighted item top right edge */
+	}
+.menu_on-T, .moT { /* horizontal menu highlighted item top center edge */
+	}
+.menu_on-TR, .moTR { /* horizontal menu highlighted item top right edge */
+	}
+.menu_on-L, .moL { /* horizontal menu highlighted item left middle edge */
+	}
+.menu_on, .moC { /* horizontal menu highlighted item center */
+	background-image: url(../../Images/MLMMenuOverBackground.gif);
+	background-position: center center;
+	background-repeat: repeat-x;
+	border-right: 1px dotted #cccccc;
+	height: 22px;
+	padding-bottom: 4px;
+	padding-left: 10px;
+	padding-right: 10px;
+	padding-top: 4px;
+	width: 100%;
+	}
+.menu_on-R, .moR { /* horizontal menu highlighted item right middle edge */
+	}
+.menu_on-BL, .moBL { /* horizontal menu highlighted item bottom left edge */
+	}
+.menu_on-B, .moB { /* horizontal menu highlighted item bottom center edge */
+	}
+.menu_on-BR, .moBR { /* horizontal menu highlighted item bottom right edge */
+	}
+
+.menu_on a, .moC a { /* horizontal menu highlighted item link text */
+	color: #1c523e;
+	}
+
+.menu_off-TL, .mTL { /* horizontal menu item top right edge */ 
+	}
+.menu_off-T, .mT { /* horizontal menu item top center edge */
+	}
+.menu_off-TR, .mTR { /* horizontal menu item top right edge */
+	}
+.menu_off-L, .mL { /* horizontal menu item left middle edge */
+	}
+.menu_off, .mC { /* horizontal menu item center */
+	border-right: 1px dotted #cccccc;
+	color: #ffffff;
+	cursor: pointer !important;
+	font-family: Verdana, Arial, Geneva, ms sans serif;
+	font-size: 13px;
+	font-weight: bold;
+	height: 22px;
+	padding-bottom: 4px;
+	padding-left: 10px;
+	padding-right: 10px;
+	padding-top: 4px;
+	}
+.menu_off-R, .mR { /* horizontal menu item right middle edge */
+	}
+.menu_off-BL, .mBL { /* horizontal menu item bottom left edge */
+	}
+.menu_off-B, .mB { /* horizontal menu item bottom center edge */
+	}
+.menu_off-BR, .mBR { /* horizotnal menu item bottom right edge */
+	}
+
+.menuEdgeL, .mel { /* horizontal menu container left edge */
+	}
+
+.menuEdgeR, .mer { /* horizontal menu container right edge */
+	}
+
+.menu_bot_bg, .mbbg { /* horizontal menu bottom trim */  
+	}
+
+.menuVerticalOverTL, .mvoTL { /* vertical menu highlighted item top right edge */
+	}
+.menuVerticalOverT, .mvoT { /* vertical menu highlighted item top center edge */
+	}
+.menuVerticalOverTR, .mvoTR { /* vertical menu highlighted item top right edge */
+	}
+.menuVerticalOverL, .mvoL { /* vertical menu highlighted item left middle edge */
+	}
+.menuVerticalOverC, .mvoC { /* vertical menu highlighted item center */
+	background-image: url(../../Images/MLMMenuOverBackground.gif);
+	background-position: center center;
+	background-repeat: repeat-x;
+	height: 22px;
+	padding-bottom: 4px;
+	padding-left: 10px;
+	padding-right: 10px;
+	padding-top: 4px;
+	width: 100%;
+	}
+.menuVerticalOverR, .mvoR { /* vertical menu highlighted item right middle edge */
+	}
+.menuVerticalOverBL, .mvoBL { /* vertical menu highlighted item bottom left edge */
+	}
+.menuVerticalOverB, .mvoB { /* vertical menu highlighted item bottom center edge */
+	}
+.menuVerticalOverBR, .mvoBR { /* vertical menu highlighted item bottom right edge */
+	}
+
+.menuVerticalOverC a, .mvoC a { /* vertical menu highlighted item link text */
+	color: #1c523e;
+	font-family: Verdana, Arial, Geneva, ms sans serif;
+	font-size: 13px;
+	font-weight: bold;
+	white-space: nowrap;
+	}
+
+.menuVerticalOverC a:hover, .mvoC a:hover { /* vertical menu highlighted item link text hover state */
+	color: #aaaaaa;
+	}
+
+.menuVerticalTL, .mvTL { /* vertical menu item top left edge */
+	}
+.menuVerticalT, .mvT { /* vertical menu item top center edge */
+	}
+.menuVerticalTR, .mvTR { /* vertical menu item top right edge */
+	}
+.menuVerticalL, .mvL { /* vertical menu item left middle edge */
+	}
+.menuVerticalC, .mvC { /* vertical menu item center */
+	border-bottom: 1px dotted #cccccc;
+	color: #ffffff;
+	cursor: pointer !important;
+	font-family: Verdana, Arial, Geneva, ms sans serif;
+	font-size: 13px;
+	font-weight: bold;
+	height: 22px;
+	padding-bottom: 4px;
+	padding-left: 10px;
+	padding-right: 10px;
+	padding-top: 4px;
+	width: 100%;
+	}
+.menuVerticalR, .mvR { /* vertical menu item right middle edge */
+	}
+.menuVerticalBL, .mvBL { /* vertical menu item bottom left edge */
+	}
+.menuVerticalB, .mvB { /* vertical menu item bottom center edge */
+	}
+.menuVerticalBR, .mvBR { /* vertical menu item bottom right edge */
+	}
+
+.menuVerticalC a, .mvC a { /* vertical menu item link text */
+	color: #ffffff;
+	font-family: Verdana, Arial, Geneva, ms sans serif;
+	font-size: 13px;
+	font-weight: bold;
+	white-space: nowrap;
+	}
+
+.menuVerticalC a:hover, .mvC a:hover { /* vertical menu item link text hover state */
+	color: #aaaaaa;
+	}
+
+
+/**********************************************************************
+ * Tab Control Styles                                                 *
+ **********************************************************************/
+.ajax__tab_xp { /* tab container alignment */
+	margin-bottom: 20px;
+	margin-left: 0px;
+	margin-right: 0px;
+	margin-top: 0px;
+	padding: 0px;
+	text-align: left;
+	}
+
+.pContent .ajax__tab_xp .ajax__tab_body { /* tab container */
+	margin: 0px;
+	padding: 0px;
+	}
+
+.ajax__tab_xp .dialog_view, .ajax__tab_xp .dv { /* panel container within tab container */
+	margin: 0px;
+	margin-bottom: 20px;
+	padding: 0px;
+	}
+
+.ajax__tab_xp .dBody { /* panel content container (excludes panel header) within tab container */ 
+	border: 0px;
+	}
+
+.ajax__tab_xp .tre { /* data grid container within tab container */
+	}
+
+
+/**********************************************************************
+ * Page Background Styles                                             *
+ **********************************************************************/
+.pageBackground, .pBack { /* page content container */
+	margin: 0px;
+	}
+
+
+/**********************************************************************
+ * Page Center Styles                                                 *
+ **********************************************************************/
+body, html, form {
+	height: 100%;
+	}
+
+.pcTable { /* contents of page container */
+	height: 100%;
+	}
+.pcTL { /* page container top left edge */
+	background-image: url(../../Images/Background.GrannyApple.gif);
+	background-position: top center;
+	background-repeat: repeat-x;
+	}
+.pcT { /* page container top center edge (header container) */
+	background-image: url(../../Images/Background.GrannyApple.gif);
+	background-position: top center;
+	background-repeat: repeat-x;
+	}
+.pcTR { /* page container top right edge */
+	background-image: url(../../Images/Background.GrannyApple.gif);
+	background-position: top center;
+	background-repeat: repeat-x;
+	}
+.pcmL { /* page container left middle edge (horizontal menu row) */
+	background-color: #72a809;
+	}
+.pcmC { /* page container center (horizontal menu container) */
+	background-color: #72a809;
+	vertical-align: bottom;
+	}
+.pcmR { /* page container right middle edge (horizontal menu row) */
+	background-color: #72a809;
+	}
+.pcL { /* page container left middle edge (vertical menu container) */
+	background-color: #72a809;
+	vertical-align: top;
+	}
+.pcC { /* page container center (contents of page container) */
+	vertical-align: top;
+	width: 100%;
+	}
+.pcR { /* page container right middle edge */
+	}
+.pcBL { /* page container bottom left edge */
+	background-color: #72a809;
+	}
+.pcB { /* page container bottom center edge (footer container) */
+	background-color: #ffffff;
+	height: 100%;
+	vertical-align: top;
+	width: 1000px;
+	}
+.pcBR { /* page container bottom right edge */
+	}
+
+
+/**********************************************************************
+ * Footer Container Styles                                            *
+ **********************************************************************/
+.footer { /* footer content container */
+	color: #aaaaaa;
+	font-family: Verdana, Arial, Geneva, ms sans serif;
+	font-size: 11px;
+	padding-top: 6px;
+	width: 100%;
+	}
+
+
+/**********************************************************************
+ * Logo Image Container Styles                                        *
+ **********************************************************************/
+.logoBG { /* application logo image container */
+	/* background-image: url(../../Images/logo.png); */
+	background-position: top left;
+	background-repeat: no-repeat;
+	height: 46px;
+	}
+
+.logoEmailBG { /* e-mail logo image container */
+	/* background-image: url(../../Images/logoEmail.png); */
+	background-position: top left;
+	background-repeat: no-repeat;
+	height: 46px;
+	}
+
+.logoPrintBG { /* print logo image container */
+	/* background-image: url(../../Images/logoPrint.png); */
+	background-position: top left;
+	background-repeat: no-repeat;
+	height: 46px;
+	}
+
+
+/**********************************************************************
+ * AJAX Smooth Panel Update Styles                                    *
+ **********************************************************************/
+.ajaxUpdatePanel { /* AJAX smooth panel update screen overlay */
+	background-color: #aaaaaa;
+	/* filter: alpha(opacity=10); */
+	height: 1000px;
+	opacity: 0.20;
+	padding: 20px;
+	position: absolute;
+	width: 100%;
+	}
+
+
+/**********************************************************************
+ * AJAX Modal Popup Control Styles                                    *
+ **********************************************************************/
+.modalPopup {
+	background-color:#eeeeee;
+	border: 1px solid #000000;
+	font-family: Verdana, Arial, Geneva, ms sans serif;
+	font-size: 11px;
+	height: 35px;
+	padding: 10px; 
+	position:absolute;
+	text-align: center;
+	top:-1000px;
+	vertical-align: center;
+	width: 200px;
+	}
+
+
+/**********************************************************************
+ * Sign In Bar Styles                                                 *
+ **********************************************************************/
+.signInBar { /* sign in bar */
+	background-image:url(../../Images/SignInBarBackground.gif);
+	background-position: center center;
+	background-repeat: repeat-x;
+	color: #1c523e;
+	font-family: Verdana, Arial, Geneva, ms sans serif;
+	font-size: 11px;
+	white-space: nowrap;
+	}
+
+.signInBarL { /* sign in bar left edge */
+	background-image:url(../../Images/SignInBarL.gif);
+	background-repeat: no-repeat;
+	}
+
+.signInBarR { /* sign in bar right edge */
+	background-image:url(../../Images/SignInBarR.gif);
+	background-repeat: no-repeat;
+	}
+
+.signInBar a, .signInBar input { /* sign in bar link text */
+	color: #1c523e;
+	font-family: Verdana, Arial, Geneva, ms sans serif;
+	font-size: 11px;
+	font-weight: bold;
+	text-decoration: none;
+	white-space: nowrap;
+	}
+
+.signInBar a:hover { /* sign in bar link text hover state */
+	color: #7188b1;
+	}
+
+.signInBarStatus { /* sign in bar status message text */
+	color: #ffffff;
+	font-family: Verdana, Arial, Geneva, ms sans serif;
+	font-size: 11px;
+	text-align: right;
+	white-space: nowrap;
+	}
+
+
+/**********************************************************************
+ * Panel Body Styles                                                  *
+ **********************************************************************/
+.dialog_body, .dBody { /* panel content container (excludes panel header) */ 
+	background-color: #ffffff;
+	border: 1px solid #d7d7d7;
+	color: #666666;
+	font-family: Verdana, Arial, Geneva, ms sans serif;
+	font-size: 11px;
+	padding-top: 6px;
+	text-align: left;
+	}
+
+.dBody2 { /* alternate panel content container (excludes panel header) */
+	color: #666666;
+	font-family: Verdana, Arial, Geneva, ms sans serif;
+	font-size: 11px;
+	text-align: left;
+	}
+
+.dBodyShowSelectRecordDivider { /* deprecated */
+	background-color: #e3eecc;
+	}
+
+.dialog_field_value, .dfv { /* panel field value text */
+	font-family: Verdana, Arial, Geneva, ms sans serif;
+	font-size: 11px;
+	padding: 1px 4px 1px 4px;
+	}
+
+.dialog_header, .dh { /* panel header container */
+	background-color: #bfd19c;
+	border-bottom: 2px solid #1c523e;
+	}
+
+.dialogHeaderBackground, .dhb { /* panel header */
+	}
+
+.dialog_header_text, .dht { /* panel header title text */
+	color: #1c523e;
+	font-family: Verdana, Arial, Geneva, ms sans serif;
+	font-size: 13px;
+	font-weight: bold;
+	padding-bottom: 5px;
+	padding-top: 6px;
+	text-align: left;
+	vertical-align: middle;
+	}
+
+.dialogHeaderEdgeL, .dhel { /* panel header left edge */
+	background-image: url(../../Images/dialogHeaderEdgeL.gif);
+	background-position: center left;
+	background-repeat: no-repeat;
+	padding-right: 6px;
+	width: 2px;
+	}
+
+.dialogHeaderEdgeR, .dher { /* panel header right edge */
+	background-image: url(../../Images/dialogHeaderEdgeR.gif);
+	background-position: center right;
+	background-repeat: no-repeat;
+	padding-left: 6px;
+	width: 2px;
+	}
+
+.dialogHeaderIcon, .dhi { /* panel header add/edit/show icon container */
+	padding-top: 2px;
+	vertical-align: middle;
+	width: 0px;
+	}
+
+.dialogHeaderIconRecord, .dhir { /* record panel header add/edit/show icon container */
+	padding-left: 10px;
+	padding-right: 10px;
+	}
+
+.dialogHeaderExpandCollapseIcon, .dheci { /* panel header expand/collapse icon container */
+	height: 14px;
+	vertical-align: middle;
+	width: 20px;
+	}
+  
+.dialogHeaderPrintEmailIcon, .dhpei { /* panel header print/email icon container */
+	padding-right: 10px;
+	text-align: right;
+	vertical-align: middle;
+	width: 100%;
+	}
+  
+.dialogHeaderTotalRecordCount, .dhtrc { /* panel header total record count container */
+	color: #222222;
+	padding-left: 20px;
+	padding-top: 2px;
+	text-align: right;
+	vertical-align: middle;
+	}
+
+.dialogHeaderTotalRecordCountText, .dhtrct { /* panel header total record count text */
+	font-family: Verdana, Arial, Geneva, ms sans serif;
+	font-size: 11px;
+	}
+
+.dialog_view, .dv { /* panel container (includes panel header) */
+	margin-bottom: 20px;
+	margin-left: 0px;
+	margin-right: 0px;
+	margin-top: 0px;
+	padding: 0px;
+	text-align: left;
+	}
+
+.dv2 { /* nested panel container (includes panel header) */
+	margin-bottom: 20px;
+	margin-left: 0px;
+	margin-right: 0px;
+	margin-top: 0px;
+	padding: 0px;
+	text-align: left;
+	width: 300px;
+	}
+
+.category, .c { /* category filter container */
+	padding: 5px;
+	}
+
+.category_area, .ca { /* category filter */
+	font-family: Verdana, Arial, Geneva, ms sans serif;
+	font-size: 11px;
+	padding-bottom: 4px;
+	vertical-align: middle;
+	white-space: nowrap;	
+	}
+
+.category_area A, .ca A { /* category filter link text */
+	font-family: Verdana, Arial, Geneva, ms sans serif;
+	font-size: 11px;
+	text-decoration: underline;
+	}
+
+.category_area A:hover, .ca A:hover { /* category filter link text hover state */
+	text-decoration: underline;
+	}
+
+.subcategory_label, .scl { /* category filter label */
+	font-family: Verdana, Arial, Geneva, ms sans serif;
+	font-size: 11px;
+	font-weight: normal;
+	padding-left: 4px;
+	vertical-align: middle;
+	white-space: nowrap;	
+	}
+
+.subcategory SELECT, .sc SELECT { /* category filter drop-down list */
+	font-family: Verdana, Arial, Geneva, ms sans serif;
+	font-size: 11px;
+	}
+
+.recordPanelButtonsAlignment, .rpbAlign { /* page buttons alignment */
+	padding-bottom: 5px;
+	}
+    
+.buttonPadding { /* page buttons padding */
+	margin-right: 6px;
+	}
+
+.field_label, .fl { /* field label (on top) */
+	color: #1c523e;
+	font-family: Verdana, Arial, Geneva, ms sans serif;
+	font-size: 11px;
+	font-weight: bold;
+	padding: 5px 4px 5px 4px;
+	text-align: left;
+	vertical-align: middle;
+	white-space: nowrap;	
+	}
+
+.field_label_on_side, .fls { /* field lable on side */
+	color: #1c523e;
+	font-family: Verdana, Arial, Geneva, ms sans serif;
+	font-size: 11px;
+	font-weight: bold;
+	padding: 5px 4px 5px 4px;
+	text-align: right;
+	vertical-align: middle;
+	white-space: nowrap;	
+	}
+
+.field_value, .fv { /* field value */
+	font-family: Verdana, Arial, Geneva, ms sans serif;
+	font-size: 11px;
+	padding: 0px;
+	}
+
+.field_input, .fi { /* input textbox */
+	color: #666666;
+	font-family: Verdana, Arial, Geneva, ms sans serif;
+	font-size: 11px;
+	}
+
+.filter_value, .filv { /* filter value */
+	padding: 2px;
+	}
+
+.filter_button_cell, .filbc { /* filter button container */
+	padding-bottom: 1px;
+	padding-left: 9px;
+	vertical-align: bottom;
+	}
+
+.Filter_Input, .fili { /* filter drop-down list */
+	border-bottom: 1px #eeeeee solid;
+	border-left: 1px #555555 solid;
+	border-right: 1px #eeeeee solid;
+	border-top: 1px #555555 solid;
+	color: #666666;
+	font-family: Verdana, Arial, Geneva, ms sans serif;
+	font-size: 11px;
+	margin: 2px;
+	}
+
+.filter_area, .fila { /* filter label */
+	color: #1c523e;
+	font-family: Verdana, Arial, Geneva, ms sans serif;
+	font-size: 11px;
+	font-weight: bold;
+	padding: 4px 7px 4px 7px;
+	text-align: right;
+	vertical-align: middle;
+	white-space: nowrap;	
+	}
+	
+.search_area, .sa { /* search area container */
+	font-family: Verdana, Arial, Geneva, ms sans serif;
+	font-size: 11px;
+	padding-top: 5px;
+	padding-bottom: 2px;
+	}
+
+.search_label, .sl { /* search label */
+	font-family: Verdana, Arial, Geneva, ms sans serif;
+	font-size: 11px;
+	padding: 5px;
+	vertical-align: middle;
+	white-space: nowrap;	
+	}
+
+.Search_Input, .si { /* search textbox */
+	border-bottom: 1px #eeeeee solid;
+	border-left: 1px #555555 solid;
+	border-right: 1px #eeeeee solid;
+	border-top: 1px #555555 solid;
+	font-family: Verdana, Arial, Geneva, ms sans serif;
+	font-size: 11px;
+	margin: 2px;
+	} 
+
+.Search_InputHint { /* style for "search for..." text inside search textbox */
+	border-bottom: 1px #eeeeee solid;
+	border-left: 1px #555555 solid;
+	border-right: 1px #eeeeee solid;
+	border-top: 1px #555555 solid;
+	color: #999999;
+	font-family: Verdana, Arial, Geneva, ms sans serif;
+	font-size: 11px;
+	margin: 2px;
+	} 
+
+.rangeFilterText, .rft { /* range filter label */
+	color: #666666;
+	font-family: Verdana, Arial, Geneva, ms sans serif;
+	font-size: 11px;
+	font-weight: normal;
+	padding-left: 6px;
+	padding-right: 6px;
+	text-decoration: none;
+	text-transform: none;
+	}
+
+
+/**********************************************************************
+ * Pagination Styles                                                  *
+ **********************************************************************/
+.button_bar_cell, .prbbc { /* button bar button container */
+	background-image:url(../../Images/ButtonBarBackground.gif); 
+	vertical-align: bottom;
+	}
+
+.prspace { /* pagination short buttons and navigation sections spacing */
+	background-image:url(../../Images/ButtonBarBackground.gif); 
+	vertical-align: bottom;
+	width: 100%;
+	}
+
+.prbggo { /* pagination row "go" button container */
+	background-image:url(../../Images/ButtonBarBackground.gif); 
+	background-repeat: repeat-x;
+	}
+
+.prbg { /* pagination row button container */
+	background-image:url(../../Images/ButtonBarBackground.gif); 
+	background-repeat: repeat-x;
+	color: #1c523e;
+	font-family: Verdana, Arial, Geneva, ms sans serif;
+	font-size: 11px;
+	font-weight: normal;
+	white-space: nowrap;
+	}
+
+.pagination_area, .pra { /* pagination row container */
+	background-image:url(../../Images/ButtonBarBackground.gif); 
+	font-family: Verdana, Arial, Geneva, ms sans serif;
+	font-size: 12px;
+	vertical-align: bottom;
+	white-space: nowrap;	
+	width: 100%;
+	}
+
+.tv { /* deprecated */
+	width: 100%;
+	}
+
+.pagination_label, .prl { /* pagination row label */
+	font-family: Verdana, Arial, Geneva, ms sans serif;
+	font-size: 11px;
+	padding: 2px;
+	vertical-align: middle;
+	white-space: nowrap;	
+	}
+
+.pagination_value, .prv { /* pagination row value */
+	font-family: Verdana, Arial, Geneva, ms sans serif;
+	font-size: 11px;
+	padding: 2px;
+	padding-left: 5px;
+	padding-right: 5px;
+	vertical-align: middle;
+	white-space: nowrap;	
+	}
+
+.Pagination_Input, .pri { /* pagination row input textbox */
+	border-bottom: 1px #eeeeee solid;
+	border-left: 1px #555555 solid;
+	border-right: 1px #eeeeee solid;
+	border-top: 1px #555555 solid;
+	font-family: Verdana, Arial, Geneva, ms sans serif;
+	font-size: 11px;
+	}
+
+.pagination_row, .pr { /* button bar/pagination row container */
+	background-image:url(../../Images/ButtonBarBackground.gif); 
+	background-position: center bottom;
+	background-repeat: repeat-x;
+	color: #1c523e;
+	vertical-align: middle;
+	width: 100%;
+	}
+
+.ajax__tab_xp .pr { /* button bar/pagination row container nested within tab container */
+	/* background-image:url(../../Images/ButtonBarBackground.gif); */
+	border-left: 1px solid #d7d7d7;
+	border-right: 1px solid #d7d7d7;
+	}
+
+.paginationRowEdgeL, .prel { /* button bar/pagination row left edge */
+	}
+
+.paginationRowEdgeR, .prer { /* button bar/pagination row right edge */
+	}
+
+.paginationButtonFirst, .prbf { /* pagination row first page button */
+	background-image:url(../../Images/arrow_beg.gif);
+	background-repeat: no-repeat;
+	height: 18px; 
+	width: 22px;
+	}
+
+.paginationButtonPrevious, .prbp { /* pagination row previous page button */
+	background-image:url(../../Images/arrow_left.gif);
+	background-repeat: no-repeat;
+	height: 18px;
+	width: 17px;
+	}
+
+.paginationButtonNext, .prbn { /* pagination row next page button */
+	background-image:url(../../Images/arrow_right.gif);
+	background-repeat: no-repeat;
+	height: 18px;
+	width: 17px;
+	}
+
+.paginationButtonLast, .prbl { /* pagination row last page button */
+	background-image:url(../../Images/arrow_end.gif);
+	background-repeat: no-repeat;
+	height: 18px;
+	width: 22px;
+	} 
+
+
+/**********************************************************************
+ * Table Rows Styles                                                  *
+ **********************************************************************/ 
+.header_cell, .header_cell_scrolling, .thc, .thcs, .thcnb, .thcwb { /* column header container (above select checkbox) */
+	background-color: #ffffff;
+	border-bottom: 2px solid #bfd19c;
+	color: #777777;
+	font-family: Verdana, Arial, Geneva, ms sans serif;
+	font-size: 11px;
+	padding: 5px;
+	padding-left: 6px;
+	padding-right: 6px;
+	text-align: left;
+	vertical-align: top;
+	}
+
+.header_cell_empty, .thce { /* column header container (when no column header text is present) */
+	background-image:url(../../Images/headerCell.gif);
+	background-position: bottom center;
+	background-repeat: repeat-x;
+	}
+
+.column_header, .tch { /* column header text */
+	color: #666666;
+	font-family: Verdana, Arial, Geneva, ms sans serif;
+	font-size: 11px;
+	}
+
+.column_header A, .column_header_scrolling A, .tch A, .tchs A { /* column header link text */
+	color: #1c523e;
+	font-family: Verdana, Arial, Geneva, ms sans serif;
+	font-size: 11px;
+	text-decoration: none;
+	} 
+	
+.column_header A:hover, .column_header_scrolling A:hover, .tch A:hover, .tchs A:hover { /* column header link text hover state */
+	text-decoration: underline;
+	}
+
+.column_header_scrolling, .tchs { /* column header (in scrolling table) link text */
+	font-weight: bold;
+	border-left: 1px #dddddd solid;
+	border-right: 1px #dddddd solid;
+	border-bottom: 1px #aaaaaa solid;
+	}
+
+.columnHeaderFilterPadding, .tchfilp { /* above column filter container */
+	padding-top: 4px;
+	}
+
+.columnHeaderFilterPadding A, .tchfilp A { /* above column filter link text */
+	text-decoration: none;
+	}
+
+.columnHeaderFilterPadding A:hover, .tchfilp A:hover { /* above column filter link text hover state */
+	text-decoration: none;
+	}
+
+.icon_cell, .alt_icon_cell, .tic, .taic { /* deprecated: data grid row button container */
+	background-color: #ffffff;
+	border-bottom: 1px solid #d7d7d7;
+	padding-top: 3px;
+	vertical-align: top;
+	width: 16px;
+	}
+
+.icon_cell_highlighted, .alt_icon_cell_highlighted, .tich, .taich { /* deprecated: data grid row button container highlighted state */
+	background-color: #e3eecc;
+	border-bottom: 1px solid #d7d7d7;
+	padding-top: 3px;
+	vertical-align: top;
+	width: 16px;
+	}
+
+.icon_cell_selected, .tics { /* deprecated: data grid row button container selected state */
+	background-color: #f0f8de;
+	border-bottom: 1px solid #d7d7d7;
+	padding-top: 3px;
+	vertical-align: top;
+	width: 16px;
+	}
+
+.ticnb { /* data grid row button container */
+	background-color: #ffffff;
+	border-bottom: 1px solid #d7d7d7;
+	padding-left: 2px;
+	padding-top: 3px;
+	vertical-align: top;
+	width: 16px;
+	}
+
+.tichnb { /* data grid row button container highlighted state */
+	background-color: #e3eecc;
+	border-bottom: 1px solid #d7d7d7;
+	padding-left: 2px;
+	padding-top: 3px;
+	vertical-align: top;
+	width: 16px;
+	}
+
+.ticsnb { /* data grid row button container selected state */
+	background-color: #f0f8de;
+	border-bottom: 1px solid #d7d7d7;
+	padding-left: 2px;
+	padding-top: 3px;
+	vertical-align: top;
+	width: 16px;
+	}
+	
+.ticwb { /* data grid select checkbox container */
+	background-color: #ffffff;
+	border-bottom: 1px solid #d7d7d7;
+	padding-top: 3px;
+	vertical-align: top;
+	width: 16px;
+	}
+
+.tichwb { /* data grid select checkbox container highlighted state */
+	background-color: #e3eecc;
+	border-bottom: 1px solid #d7d7d7;
+	padding-top: 3px;
+	vertical-align: top;
+	width: 16px;
+	}
+
+.ticswb { /* data grid select checkbox container selected state */
+	background-color: #f0f8de;
+	border-bottom: 1px solid #d7d7d7;
+	padding-top: 3px;
+	vertical-align: top;
+	width: 16px;
+	}
+
+.tichb { /* data grid right-most row button container (when no select checkbox is present) */
+	background-color: #ffffff;
+	border-bottom: 1px solid #d7d7d7;
+	padding-top: 3px;
+	vertical-align: top;
+	width: 16px;
+	}
+
+.tichhb { /* data grid right-most row button container (when no select checkbox is present) highlighted state */
+	background-color: #e3eecc;
+	border-bottom: 1px solid #d7d7d7;
+	padding-top: 3px;
+	vertical-align: top;
+	width: 16px;
+	}
+
+.ticshb { /* data grid right-most row button container (when no select checkbox is present) selected state */
+	background-color: #f0f8de;
+	border-bottom: 1px solid #d7d7d7;
+	padding-top: 3px;
+	vertical-align: top;
+	width: 16px;
+	}
+			
+.icon_cell_empty, .tice { /* data grid row button container (when no row button is present) */
+	background-color: #ffffff;
+	border-bottom: 1px solid #d7d7d7;
+	width: 0px;
+	}
+
+.icon_cell_highlighted_empty, .tiche { /* data grid row button container (when no row button is present) highlighted state */
+	background-color: #e3eecc;
+	border-bottom: 1px solid #d7d7d7;
+	width: 0px;
+	}
+
+.icon_cell_selected_empty, .ticse { /* data grid row button container (when no row button is present) selected state */
+	background-color: #f0f8de;
+	border-bottom: 1px solid #d7d7d7;
+	width: 0px;
+	}
+	
+.table_cell, .alt_table_cell, .ttc, .tatc { /* data grid data container */
+	background-color: #ffffff;
+	border-bottom: 1px solid #d7d7d7;
+	font-family: Verdana, Arial, Geneva, ms sans serif;
+	font-family: Verdana, Geneva, ms sans serif;
+	font-size: 11px;
+	padding: 5px;
+	vertical-align: top;
+	text-align: left;
+	}
+
+.table_cell_highlighted, .alt_table_cell_highlighted, .ttch, .tatch { /* data grid data container highlighted state */
+	background-color: #e3eecc;
+	border-bottom: 1px solid #d7d7d7;
+	font-family: Verdana, Arial, Geneva, ms sans serif;
+	font-size: 11px;
+	padding: 5px;
+	vertical-align: top;
+	text-align: left;
+	}
+
+.table_cell_selected, .ttcs { /* data grid data container selected state */
+	background-color: #f0f8de;
+	border-bottom: 1px solid #d7d7d7;
+	font-family: Verdana, Arial, Geneva, ms sans serif;
+	font-size: 11px;
+	padding: 5px;
+	vertical-align: top;
+	text-align: left;
+	}
+
+.ttc a, .tatc a, .ttch a, .tatch a, .ttcs a, .dfv a, .dialog_field_value a, .fyp_link a, .galleryttc a {/* data grid data link text */
+	color: #1c523e;
+	text-decoration: none;
+	}
+
+.ttc a:hover, .tatc a:hover, .ttch a:hover, .tatch a:hover, .ttcs a:hover, .dfv a:hover, .dialog_field_value a:hover, .fyp_link a:hover, .galleryttc a:hover {/* data grid data link text hover state */
+	text-decoration: underline;
+	}
+
+.ttc .dv, .ttch .dv, .ttcs .dv { /* panel container nested within data grid */
+	margin: 0px;
+	padding: 0px;
+	}
+
+.ttc .ajax__tab_xp, .ttch .ajax__tab_xp, .ttcs .ajax__tab_xp { /* tab container nested within data grid */
+	margin: 0px;
+	padding: 0px;
+	}
+
+.totals_cell, .tpttc { /* data grid totals container */
+	background-color: #ffffff;
+	border-bottom: 1px solid #d7d7d7;
+	font-family: Verdana, Arial, Geneva, ms sans serif;
+	font-size: 11px;
+	padding: 5px;
+	text-align: left;
+	vertical-align: top;
+	width: 48px;
+	}
+
+.totals_cell_value, .tpttcv { /* data grid totals text */
+	background-color: #ffffff;
+	font-family: Verdana, Arial, Geneva, ms sans serif;
+	font-size: 11px;
+	padding: 5px;
+	text-align: right;
+	vertical-align: top;
+	}
+
+.page_total_label, .tptl { /* data grid page totals label */
+	font-family: Verdana, Arial, Geneva, ms sans serif;
+	font-size: 11px;
+	padding-left: 20px;
+	vertical-align: middle;
+	white-space: nowrap;	
+	}
+
+.page_total_value, .tptv { /* data grid page totals text */
+	font-family: Verdana, Arial, Geneva, ms sans serif;
+	font-size: 11px;
+	padding: 3px;
+	}
+
+.grand_total_label, .tgtl { /* data grid grand total label */
+	font-family: Verdana, Arial, Geneva, ms sans serif;
+	font-size: 11px;
+	padding-left: 20px;
+	vertical-align: middle;
+	white-space: nowrap;	
+	}
+
+.grand_total_value, .tgtv { /* data grid grand total text */
+	font-family: Verdana, Arial, Geneva, ms sans serif;
+	font-size: 11px;
+	font-weight: normal;
+	padding: 3px;
+	}
+
+.tableRowsEdge, .tre { /* data grid container */
+	background-color: #d7d7d7;
+	}
+
+
+/**********************************************************************
+ * Scrolling Table Styles                                             *
+ **********************************************************************/
+div.tableContainer { /* scrolling table container */
+	clear: both;
+	height: 285px;  /* defines scrolling region height */
+	overflow: auto; /* enables scroll bar */
+	}
+
+div.tableContainer table { /* data grid container of scrolling table */
+	width: 97%; /* defines data region width (provide room for scroll bar) */
+	}
+
+thead.fixedHeader tr { /* fixed column header of data grid */
+	background-color: #ffffff; /* obscures data behind headers */
+	position: relative; 	   /* fixes headers in place */
+	}
+
+.scrollContent { /* data grid (excludes fixed column header) within scrolling table */
+	display: ;
+	}
+
+thead.fixedHeader td.button-white { /* theme button container within scrolling table column header */
+	white-space: nowrap;
+	width: 0%;
+	}
+
+thead.fixedHeader table { /* deprecated */
+	width: 0%;
+	}
+
+
+/**********************************************************************
+ * Auto Type Ahead (Interactive Search) Styles                        * 
+ **********************************************************************/
+.autotypeahead_completionListElement { /* textbox value */   
+	background-color: #ffffff;
+	border-bottom: 1px #555555 solid;
+	border-left: 1px #555555 solid;
+	border-right: 1px #555555 solid;
+	border-top: 1px #555555 solid;
+	list-style-type: none;
+	margin: 0px;
+	overflow: auto;
+	padding: 0px;
+	visibility: hidden;
+	}
+
+.autotypeahead_highlightedListItem { /* highlighted list item */
+	background-color: #e3eecc;
+	font-family: Verdana, Arial, Geneva, ms sans serif;
+	font-size: 11px;
+	padding-bottom: 1px; 
+	}
+
+.autotypeahead_listItem { /* list item */
+	font-family: Verdana, Arial, Geneva, ms sans serif;
+	font-size: 11px;
+	padding-bottom: 1px; 
+	}
+
+
+/**********************************************************************
+ * AJAX Calendar Styles                                               *
+ **********************************************************************/
+.MyCalendar .ajax__calendar_container { /* AJAX calendar container */
+	background-color: #ffffff;
+	border: 1px solid #636563;
+	color: #000000;
+	z-index: 20;
+	}
+
+.MyCalendar .ajax__calendar_container table { /* AJAX calendar days container */
+	height: 100%;
+	width: 100%;
+	}
+
+.MyCalendar .ajax__calendar_day { /* AJAX calendar non-current day container */ 
+	border: 1px solid #ffffff;
+	}
+
+.MyCalendar .ajax__calendar_other .ajax__calendar_day,
+.MyCalendar .ajax__calendar_other .ajax__calendar_year { /* AJAX calendar non-current month day/year container */
+	border: 1px solid #ffffff;
+	color: #636563;
+	}
+
+.MyCalendar .ajax__calendar_hover .ajax__calendar_day,
+.MyCalendar .ajax__calendar_hover .ajax__calendar_month,
+.MyCalendar .ajax__calendar_hover .ajax__calendar_year { /* AJAX calendar day/month/year hover state */
+	background-color: #effbff;
+	border: 1px solid #def3ff;
+	color: #0065ce;
+	}
+
+.MyCalendar .ajax__calendar_active .ajax__calendar_day,
+.MyCalendar .ajax__calendar_active .ajax__calendar_month,
+.MyCalendar .ajax__calendar_active .ajax__calendar_year { /* AJAX calendar current day/month/year container */
+	background-color: #effbff;
+	border: 1px solid #0065ce;
+	color: #0065ce;
+	}
+
+
+/**********************************************************************
+ * Info Panel Styles                                                  *
+ **********************************************************************/
+.panelInformationDisplayWithImage { /* information panel (with image) container */
+	}
+
+.panelInformationDisplayWithImage_ImageArea { /* information panel (with image) image container */
+	padding: 10px 10px 10px 16px;
+	}
+
+.panelInformationDisplayWithImage_InfoArea { /* information panel (with image) info container */
+	font-family: Verdana, Arial, Geneva, ms sans serif;
+	font-size: 11px;
+	vertical-align: middle;
+	}
+
+.panelInformationDisplayWithImage_InfoTitle { /* information panel (with image) info title text */
+	color: #777777;
+	font-family: Verdana, Arial, Geneva, ms sans serif;
+	font-size: 11px;
+	font-weight: bold;
+	white-space: nowrap;	
+	}
+
+.panelInformationDisplayWithImage_InfoDetails { /* information panel (with image) info details text */
+	font-family: Verdana, Arial, Geneva, ms sans serif;
+	font-size: 11px;
+	padding-right: 16px;
+	white-space: nowrap;
+	}
+
+.panelInformationDisplay { /* information panel container */
+	border-bottom: 1px #cccccc solid;
+	border-left: 1px #cccccc solid;
+	border-right: 1px #cccccc solid;
+	border-top: 1px #cccccc solid;
+	}
+
+.panelInformationDisplay_InfoArea { /* information panel info container */
+	padding: 10px;
+	}
+
+.panelInformationDisplay_InfoTitle { /* information panel info title text */
+	color: #777777;
+	font-family: Verdana, Arial, Geneva, ms sans serif;
+	font-size: 11px;
+	font-weight: bold;
+	text-align: center;
+	white-space: nowrap;	
+	}
+
+.panelInformationDisplay_InfoDetails { /* information panel info details text */
+	font-family: Verdana, Arial, Geneva, ms sans serif;
+	font-size: 11px;
+	text-align: center;
+	white-space: nowrap;
+	} 
+
+
+/**********************************************************************
+ * Configuration/Error Page Styles                                    *
+ **********************************************************************/
+.configureErrorPagesText { /* configure/error page body text */
+	color: #333333;
+	font-family: Verdana, Arial, Geneva, ms sans serif;
+	font-size: 11px;
+	}
+	
+
+/**********************************************************************
+ * Section 508 Compliance Styles                                      *
+ **********************************************************************/
+.skipNavigationLinks { /* skip navigation links container*/
+	font-family: Verdana, Arial, Geneva, ms sans serif;
+	color: #aaaaaa;
+	font-size: 11px;
+	}
+	
+
+/**********************************************************************
+ * Detail Rollover Popup Styles                                       *
+ **********************************************************************/
+.detailRolloverPopup { /* detail rollover popup container */
+	position: absolute;
+	visibility: visible;
+	z-index: 2;
+	}
+
+.detailRolloverTitle { /* detail rollover popup title */
+	font-family: Verdana, Arial, Geneva, ms sans serif;
+	font-size: 11px;
+	font-weight: bold;
+	padding-bottom: 5px;
+	padding-left: 4px;
+	padding-top: 6px;
+	vertical-align: middle;
+	width: 100%;
+	}
+
+.detailRolloverPopupCloseButtonAlignment { /* detail rollover popup close button container */
+	padding-top: 26px;
+	}
+
+.detailRolloverTL { /* detail rollover popup top left edge */
+	background-image:url(../../Images/detailRolloverTL.png);
+	background-position: bottom right;
+	background-repeat: no-repeat;
+	height: 57px;
+	width: 65px;
+	}
+
+.detailRolloverT { /* detail rollover popup top center edge */
+	background-image:url(../../Images/detailRolloverT.png);
+	background-position: bottom center;
+	background-repeat: repeat-x;
+	height: 57px;
+	}
+
+.detailRolloverTR { /* detail rollover popup top right edge */
+	background-image:url(../../Images/detailRolloverTR.png);
+	background-position: bottom left;
+	background-repeat: no-repeat;
+	height: 57px;
+	width: 65px;
+	}
+
+.detailRolloverL { /* detail rollover popup left middle edge */
+	background-image:url(../../Images/detailRolloverL.png);
+	background-position: center right;
+	background-repeat: repeat-y;
+	width: 65px;
+	}
+
+.detailRolloverC { /* detail rollover popup center */
+	background-image:url(../../Images/detailRolloverC.png);
+	font-family: Verdana, Arial, Geneva, ms sans serif;
+	font-size: 11px;
+	}
+
+.detailRolloverR { /* detail rollover popup right middle edge */
+	background-image:url(../../Images/detailRolloverR.png);
+	background-position: center left;
+	background-repeat: repeat-y;
+	width: 65px;
+	}
+
+.detailRolloverBL { /* detail rollover popup bottom left edge */
+	background-image:url(../../Images/detailRolloverBL.png);
+	background-position: top right;
+	background-repeat: no-repeat;
+	height: 29px;
+	width: 65px;
+	}
+
+.detailRolloverB { /* detail rollover popup bottom center edge */
+	background-image:url(../../Images/detailRolloverB.png);
+	background-position: top center;
+	background-repeat: repeat-x;
+	height: 29px;
+	}
+
+.detailRolloverBR { /* detail rollover popup bottom right edge */
+	background-image:url(../../Images/detailRolloverBR.png);
+	background-position: top left;
+	background-repeat: no-repeat;
+	height: 29px;
+	width: 65px;
+	}
+
+
+/**********************************************************************
+ **********************************************************************
+ * Migration-Only Styles                                              *
+ *                                                                    *
+ * The following styles have been deprecated in the latest release,   *
+ * but may still be needed in migrated applications.                  *
+ **********************************************************************
+ **********************************************************************/
+
+/**********************************************************************
+ * Page Background Styles                                             *
+ **********************************************************************/
+.pageBorderTL, .pbTL { /* page border top left edge */
+	}
+.pageBorderT, .pbT { /* page border top center edge */
+	}
+.pageBorderTR, .pbTR { /* page border top right edge */
+	}
+.pageBorderL, .pbL { /* page border left middle edge */
+	}
+.pageBorderC, .pbC { /* page border center */
+	vertical-align: top;
+	}
+.pageBorderR, .pbR { /* page border right middle edge */
+	}
+.pageBorderBL, .pbBL { /* page border bottom left edge */
+	}
+.pageBorderB, .pbB { /* page border bottom center edge */
+	}
+.pageBorderBR, .pbBR { /* page border bottom right edge */
+	}
+
+.page_yellow, .pContent { /* page content container */
+	background-color: #ffffff;
+	height: 30px;
+	text-align: left;
+	}
+
+.pageAlignment, .pAlign { /* page content container alignment */
+	vertical-align: top;
+	}
+
+.borderTable, .pbTable { /* page content container */
+	width: 100%;
+	}
+
+.divider { /* deprecated */ 
+	}
+
+
+/**********************************************************************
+ * Panel Body Styles                                                  *
+ **********************************************************************/
+.dialogHeaderTextRecord, .dhtr { /* record panel header title text */
+	color: #1c523e;
+	font-family: Verdana, Arial, Geneva, ms sans serif;
+	font-size: 11px;
+	font-weight: bold;
+	padding-bottom: 5px;
+	padding-left: 4px;
+	padding-top: 6px;
+	text-transform: uppercase;
+	}
+
+
+/**********************************************************************
+ * Date Selector Styles                                               *
+ **********************************************************************/
+.dsTodayDay { /* current day container */
+	background-color: #eeeeee; 
+	}
+
+.dsDayHeader { /* day of week header container */
+	background-color: #eeeeee; 
+	color: #666666;
+	font-size: 11px;
+	padding: 6px;
+	}
+
+.dsSelectedDay { /* selected day container */
+	padding: 6px;
+	}
+
+.dsTitle { /* title */
+	background-color: #ffffff;
+	color: #666666;
+	font-weight: bold;
+	}
+
+.dsWeekendDay { /* weekend day container */
+	background-color: #ffffff; 
+	padding: 6px;
+	}
+
+.dsOtherMonthDay { /* non-current month/day container */
+	background-color: #ffffff; 
+	padding: 6px;
+	}
+
+.dsDay a, .dsTodayDay a, .dsSelectedDay a, .dsWeekendDay a, .dsOtherMonthDay a { /* day link text */
+	color: #666666;
+	font-family: Verdana, Arial, Geneva, ms sans serif;
+	font-size: 11px;
+	}
+
+
+/**********************************************************************
+ * JavaScript Date Selector Styles                                    *
+ **********************************************************************/
+.dpTable { /* date selector container */
+	background-color: #ffffff;
+	border: 1px solid #aaaaaa;
+	color: #333333;
+	}
+
+.dpTD { /* date selector non-current-month day container */
+	border: 1px solid #aaaaaa;
+	padding-bottom: 5px;
+	padding-left: 8px;
+	padding-right: 8px;
+	padding-top: 5px;
+	text-align: center;
+	vertical-align: middle;
+	}
+
+.dpDayHighlightTD { /* date selector current day container */
+	border: 1px solid #aaaaaa;
+	color: #0000ff;
+	font-weight: bold;
+	padding-bottom: 5px;
+	padding-left: 8px;
+	padding-right: 8px;
+	padding-top: 5px;
+	text-align: center;
+	vertical-align: middle;
+	}
+
+.dpTDHover { /* date selector day container hover state */
+	border: 1px solid #aaaaaa;
+	color: #0000ff;
+	cursor: pointer;
+	font-weight: bold;
+	padding-bottom: 5px;
+	padding-left: 8px;
+	padding-right: 8px;
+	padding-top: 5px;
+	text-align: center;
+	vertical-align: middle;
+	}
+
+.dpDayTD { /* date selector day container */
+	padding-bottom: 2px;
+	padding-left: 8px;
+	padding-right: 8px;
+	padding-top: 2px;
+	text-align: center;
+	vertical-align: middle;
+	}
+
+.dpTitleText { /* date selector title text */
+	color: #333333;
+	font-size: 11px;
+	font-weight: bold;
+	padding-top: 3px;
+	text-align: center;
+	vertical-align: middle;
+	}
+
+.dpDiv { /* deprecated */
+	}
+
+.dpTR { /* date selector week container */
+	}
+
+.dpTitleTR { /* date selector title text container */
+	}
+
+.dpDayTR { /* date selector day container */
+	}
+
+
+/**********************************************************************
+ * Detail Rollover Popup Styles (for non-PNG-supporting IE6)          *
+ **********************************************************************/
+/*
+.detailRolloverTL_noPNG {
+	height: 57px;
+	width: 65px;
+	filter:progid:DXImageTransform.Microsoft.AlphaImageLoader(enabled=true, sizingMethod=scale, src='../../Images/detailRolloverTL.png');
+	}
+
+.detailRolloverT_noPNG {
+	height: 57px;
+	filter:progid:DXImageTransform.Microsoft.AlphaImageLoader(enabled=true, sizingMethod=scale, src='../../Images/detailRolloverT.png');
+	}
+
+.detailRolloverTR_noPNG {
+	height: 57px;
+	width: 65px;
+	filter:progid:DXImageTransform.Microsoft.AlphaImageLoader(enabled=true, sizingMethod=scale, src='../../Images/detailRolloverTR.png');
+	}
+
+.detailRolloverL_noPNG {
+	width: 65px;
+	filter:progid:DXImageTransform.Microsoft.AlphaImageLoader(enabled=true, sizingMethod=scale, src='../../Images/detailRolloverL.png');
+	}
+
+.detailRolloverR_noPNG {
+	width: 65px;
+	filter:progid:DXImageTransform.Microsoft.AlphaImageLoader(enabled=true, sizingMethod=scale, src='../../Images/detailRolloverR.png');
+	}
+
+.detailRolloverBL_noPNG {
+	height: 29px;
+	width: 65px;
+	filter:progid:DXImageTransform.Microsoft.AlphaImageLoader(enabled=true, sizingMethod=scale, src='../../Images/detailRolloverBL.png');
+	}
+
+.detailRolloverB_noPNG {
+	height: 29px;
+	filter:progid:DXImageTransform.Microsoft.AlphaImageLoader(enabled=true, sizingMethod=scale, src='../../Images/detailRolloverB.png');
+	}
+
+.detailRolloverBR_noPNG {
+	height: 29px;
+	width: 65px;
+	filter:progid:DXImageTransform.Microsoft.AlphaImageLoader(enabled=true, sizingMethod=scale, src='../../Images/detailRolloverBR.png');
+	}
+*/
+
+
+/**********************************************************************
+ * Web Accordion Styles                                               * 
+ **********************************************************************/
+.accordionHeader { /* accordion header area */ 
+	background-color: #ffffff;
+	border-bottom: 2px solid #bfd19c;
+	border-left: 1px solid #d7d7d7;
+	border-right: 1px solid #d7d7d7;
+	border-top: 1px solid #d7d7d7;
+	padding-bottom: 10px;
+	padding-top: 10px;
+	vertical-align: middle;
+	}
+
+.accordionHeaderTitle { /* accordion header area title */
+	color: #1c523e;
+	font-family: Verdana, Arial, Geneva, ms sans serif;
+	font-size: 13px;
+	font-weight: bold;
+	text-align: left;
+	text-transform: none;
+   	vertical-align: middle;
+	width: 100%;
+	}
+
+
+/**********************************************************************
+ * Mobile Web Page Styles                                             * 
+ **********************************************************************/
+.mobileBase { /* mobile page default settings */
+	background-color: #ffffff;
+	color: #666666;
+	font-family: Verdana, Arial, Geneva, ms sans serif;
+	font-size: 3.0em;
+	width: 100%;
+	}
+
+.mobileHeader { /* mobile header area */
+	background-image: url(../../Images/MobileHeaderBackground.GrannyApple.gif);
+	background-position: center top;
+	background-repeat: repeat-x;
+	padding-left: 3%;
+	padding-right: 3%;
+	width: 100%;
+	}
+
+.mobileHeaderPagination { /* mobile header area */
+	background-color: #bfd19c;
+	padding-left: 3%;
+	padding-right: 3%;
+	width: 100%;
+	}
+
+.mobileBody { /* mobile main content area */ 
+	padding-bottom: 4%;
+	padding-left: 2%;
+	padding-right: 2%;
+	padding-top: 2%;
+	width: 100%;
+	}
+
+.mobileBodyNoPadding { /* mobile main content area (with padding removed) */
+	padding: 0px;
+	width: 100%;
+	}
+
+.mobileBodyText { /* mobile main content area default text styles */
+	color: #666666;
+	font-family: Verdana, Arial, Geneva, ms sans serif;
+	font-size: 0.73em;
+	}
+
+.mobileHeaderLeft { /* mobile header area left button container */
+	text-align: left;
+	width: 10%;
+	}
+
+.mobileHeaderTitle { /* mobile header title area */
+	color: #ffffff;
+	font-family: Verdana, Arial, Geneva, ms sans serif;
+	font-size: 1.2em;
+	padding-bottom: 4%;
+	padding-top: 4%;
+	text-align: center;
+	}
+
+.mobileFontAdjust90 { /* mobile font downscale to 90% original size (used in <span> tag around text to be adjusted) */
+	font-size: 0.9em;
+	}
+
+.mobileFontAdjust80 { /* mobile font downscale to 80% original size (used in <span> tag around text to be adjusted) */
+	font-size: 0.8em;
+	}
+
+.mobileFontAdjust70 { /* mobile font downscale to 70% original size (used in <span> tag around text to be adjusted) */ 
+	font-size: 0.7em;
+	}
+
+.mobileFontAdjust60 { /* mobile font downscale to 60% original size (used in <span> tag around text to be adjusted) */
+	font-size: 0.6em;
+	}
+
+.mobileHeaderOption { /* mobile header area icon button container */
+	width: 16%
+	}
+
+.mobileHeaderRight { /* mobile header area right button container */
+	text-align: right;
+	width: 10%;
+	}
+
+.mobileSignInStatus {
+	color: #ffffff;
+	font-family: Verdana, Arial, Geneva, ms sans serif;
+	font-size: 0.6em;
+	text-align: right;
+	}
+
+.mobileFilterArea { /* mobile header filter area */
+	background-color: #eeeeee;
+	}
+
+.mobileFooter { /* mobile footer area */
+	border-top: 2px solid #1c523e;
+	color: #aaaaaa;
+	font-family: Verdana, Arial, Geneva, ms sans serif;
+	font-size: 0.55em;
+	padding-bottom: 2%;
+	padding-left: 3%;
+	padding-top: 1%;
+	width: 100%;
+	}
+
+.mobileMenu { /* mobile vertical menu item */
+	background-image: url(../../Images/MobileMenuItemBackground.GrannyApple.gif);
+	background-position: center bottom;
+	background-repeat: repeat-x;
+	border-bottom: 1px dotted #cccccc;
+	border-top: 1px dotted #cccccc;
+	color: #ffffff;
+	cursor: pointer !important;
+	font-family: Verdana, Arial, Geneva, ms sans serif;
+	font-size: 1.2em;
+	font-weight: bold;
+	padding-bottom: 3%;
+	padding-left: 3%;
+	padding-top: 3%;
+	text-transform: none;
+	}
+
+.mobileSubmenuContainer { /* submenu container (menu leaves) */
+	border: 1px dotted #cccccc;
+	z-index: 100;
+	}
+
+.mobileSubmenu { /* mobile menu item submenu */
+	background-color: #f0f8de;
+	color: #1c523e;
+	cursor: pointer !important;
+	font-family: Verdana, Arial, Geneva, ms sans serif;
+	font-size: 1.0em;
+	padding: 1%;
+	text-transform: none;
+	}
+
+.mobileMenuHorizontal { /* mobile horizontal menu item */
+	background-image: url(../../Images/MobileMenuItemBackground.GrannyApple.gif);
+	background-position: center bottom;
+	background-repeat: repeat-x;
+	border-bottom: 1px dotted #cccccc;
+	border-right: 2px solid #cccccc;
+	border-top: 1px dotted #cccccc; 
+	color: #ffffff;
+	cursor: pointer !important;
+	font-family: Verdana, Arial, Geneva, ms sans serif;
+	font-size: 1.2em;
+	font-weight: bold;
+	padding-bottom: 2%;
+	padding-top: 2%;
+	text-align: center;
+	text-transform: none;
+	}
+
+a.mobileButtonLink:link, a.mobileButtonLink:visited, .mobileButtonLink { /* mobile theme button link text */
+	color: #666666;
+	font-family: Verdana, Arial, Geneva, ms sans serif;
+	font-size: 0.87em;
+	font-weight: bold;
+	text-decoration: none;
+	text-transform: none;
+	}
+
+a.mobileLink:link, a.mobileLink:visited, .mobileLink { /* mobile link text */
+	color: #1c523e;
+	font-family: Verdana, Arial, Geneva, ms sans serif;
+	font-size: 1.0em;
+	text-decoration: underline;
+	}
+
+.mobileThemeButton {
+	-moz-border-radius: 10px;
+	-moz-box-shadow: inset 0px 2px 0px 0px #ffffff;
+	-webkit-border-radius: 10px;
+	-webkit-box-shadow: inset 0px 2px 0px 0px #ffffff;
+	background: -moz-linear-gradient( center top, #ffffff 20%, #d0d0d0 100% );
+	background: -webkit-gradient( linear, left top, left bottom, color-stop(0.20, #ffffff), color-stop(1, #d0d0d0) );
+	background: -ms-linear-gradient(top, #ffffff 5%, #d0d0d0 100%);
+	box-shadow: 0px 2px 0px #ffffff inset;
+	border: 2px solid #7b7b7b;
+	border-radius: 10px;
+	display: inline-block;
+	filter: progid:DXImageTransform.Microsoft.gradient(startColorStr='#ffffff', endColorStr='#d0d0d0');
+	padding: 20px 10px 20px 10px;
+	text-decoration: none;
+	white-space: nowrap;
+	}
+
+.mobileTableCellTitle { /* mobile show table cell title */
+	font-size: 1.2em;
+	font-weight: bold;
+	}
+
+.mobileTableCell { /* mobile show table cell */
+	border-bottom: 2px solid #bfd19c;
+	color: #666666;
+	font-family: Verdana, Arial, Geneva, ms sans serif;
+	font-size: 0.9em;
+	padding: 2%;
+	}
+
+.mobileTableImageCell { /* mobile show table cell (to keep image cell narrow) */
+	border-bottom: 2px solid #bfd19c;
+	color: #666666;
+	font-family: Verdana, Arial, Geneva, ms sans serif;
+	font-size: 0.9em;
+	padding: 2%;
+	width: 1%;
+	}
+
+.mobileChildTableContainer { /* mobile child table container */
+	border: 2px solid #bfd19c;
+	margin-bottom: 2%;
+	}
+
+.mobileAccordionHeader { /* mobile accordion header area */ 
+	background-image: url(../../Images/MobileHeaderBackground.GrannyApple.gif);
+	background-position: center top;
+	background-repeat: repeat-x;
+	font-family: Verdana, Arial, Geneva, ms sans serif;
+	padding-bottom: 2%;
+	padding-left: 2%;
+	padding-top: 2%;
+	vertical-align: middle;
+	}
+
+.mobileAccordionHeaderTitle { /* mobile accordion header area title */
+	color: #ffffff;
+	font-family: Verdana, Arial, Geneva, ms sans serif;
+	font-size: 1.0em;
+	font-weight: normal;
+	padding-left: 1%;
+	padding-right: 1%;
+	text-decoration: none;
+	width: 100%;
+	}
+
+.mobileChildTableCellTitle { /* mobile show child table title */
+	font-size: 1.2em;
+	font-weight: bold;
+	}
+
+.mobileChildTableCell { /* mobile show child table cell */
+	background-color: #efefef;
+	border-bottom: 2px solid #bfd19c;
+	color: #666666;
+	font-family: Verdana, Arial, Geneva, ms sans serif;
+	font-size: 0.9em;
+	padding: 2%;	
+	}
+
+.mobileRecordPanel { /* mobile record panel area */
+	padding-bottom: 10%;
+	}
+
+.mobileFieldLabelOnTop { /* mobile record field label (above field value) */
+	color: #1c523e;
+	font-family: Verdana, Arial, Geneva, ms sans serif;
+	font-size: 0.87em;
+	font-weight: bold;
+	padding-bottom: 1%;
+	padding-top: 3%;
+	}
+
+.mobileFieldLabelOnRight { /* mobile record field label (to right of checkbox) */
+	color: #1c523e;
+	font-family: Verdana, Arial, Geneva, ms sans serif;
+	font-size: 0.67em;
+	font-weight: bold;
+	padding-bottom: 2%;
+	width: 100%;
+	}
+
+.mobileFieldLabelOnLeft { /* mobile record field label (checkbox) */
+	color: #1c523e;
+	font-family: Verdana, Arial, Geneva, ms sans serif;
+	font-size: 0.67em;
+	font-weight: bold;
+	padding-bottom: 2%;
+	}
+
+.mobileFieldValueOnBottom { /* mobile record field value (below field label) */
+	color: #666666;
+	font-family: Verdana, Arial, Geneva, ms sans serif;
+	font-size: 1.0em;
+	padding-bottom: 2%;
+	}
+
+.mobileFieldInput { /* mobile input textbox */
+	color: #666666;
+	font-family: Verdana, Arial, Geneva, ms sans serif;
+	font-size: 1.0em;
+	}
+
+textarea.mobileFieldInput { /* explicitly define width of mobile textarea (work-around for compressed textarea in Live Preview) */
+	width: 86%;
+	}
+
+.mobileFilterInput { /* mobile drop-down list */
+	color: #666666;
+	font-family: Verdana, Arial, Geneva, ms sans serif;
+	font-size: 1.0em;
+	width: 86%;
+	}
+
+.mobilePaginationArea { /* mobile pagination area */
+	}
+
+.mobilePaginationAreaFirst { /* mobile pagination first button container */
+	text-align: left;
+	}
+
+.mobilePaginationAreaPrevious { /* mobile pagination previous button container */
+	text-align: right;
+	}
+
+.mobilePaginationAreaCurrentPage { /* mobile pagination current page text */
+	color: #ffffff;
+	font-family: Verdana, Arial, Geneva, ms sans serif;
+	font-size: 1.0em;
+	text-align: center;
+	white-space: nowrap;
+	width: 30%;
+	}
+
+.mobilePaginationAreaNext { /* mobile pagination next button container */
+	text-align: left;
+	}
+	
+.mobilePaginationAreaLast { /* mobile pagination last button container */
+	text-align: right;
+	}
+	
+.mobilePaginationAreaSize { /* mobile pagination page size container */
+	}
+
+.mobileCheckbox input, input.mobileCheckbox { /* mobile checkbox (accounts for <span> container around checkbox) */
+	height: 50px;
+	width: 50px;
+	}
+
+.mobileRadioButton input, input.mobileRadioButton { /* mobile radio button (accounts for <span> container around checkbox) */
+	height: 50px;
+	width: 50px;
+	}
+
+.MyCalendarMobile .ajax__calendar_container { /* mobile ajax calendar container */
+	background-color: #ffffff;
+	border: 1px solid #666666;
+	color: #666666;
+	height: 780px;
+	width: 720px;
+	z-index: 20;
+	}
+
+.MyCalendarMobile .ajax__calendar_body, .MyCalendarMobile .ajax__calendar_body table { /* mobile ajax calendar container inner table */
+	background-color: #ffffff;
+	height: 600px;
+	width: 720px;
+	}
+
+.MyCalendarMobile .ajax__calendar_header { /* mobile ajax calendar header */
+	font-family: Arial, Verdana, Geneva, ms sans serif;
+	font-size: 4.0em;
+	padding-bottom: 40px;
+	}
+
+.MyCalendarMobile .ajax__calendar_title { /* mobile ajax calendar title */
+	color: #1c523e;
+	font-size: 1.2em;
+	padding-top: 30px;
+	}
+
+.MyCalendarMobile .ajax__calendar_footer { /* mobile ajax calendar footer (today's date) */
+	color: #1c523e;
+	font-family: Arial, Verdana, Geneva, ms sans serif;
+	font-size: 3.0em;
+	padding-top: 20px;
+	}
+
+.MyCalendarMobile .ajax__calendar_prev {
+	background-image: url(../../Images/MobileButtonPrevious.ltr.png);
+	background-repeat: no-repeat;
+	height: 120px;
+	width: 100px; 
+	}
+
+.MyCalendarMobile .ajax__calendar_next {
+	background-image: url(../../Images/MobileButtonNext.ltr.png);
+	background-repeat: no-repeat;
+	height: 120px;
+	width: 100px; 
+	}
+
+.MyCalendarMobile .ajax__calendar_dayname { /* mobile ajax calendar days of week title */
+	color: #1c523e;
+	font-family: Arial, Verdana, Geneva, ms sans serif;
+	font-size: 4.0em;
+	}
+
+.MyCalendarMobile .ajax__calendar_day { /* mobile ajax calendar all days */ 
+	font-family: Arial, Verdana, Geneva, ms sans serif;
+	font-size: 4.0em;
+	}
+
+.MyCalendarMobile .ajax__calendar_month, .MyCalendarMobile .ajax__calendar_year { /* mobile ajax calendar all months, years */ 
+	font-family: Arial, Verdana, Geneva, ms sans serif;
+	font-size: 2.0em;
+	}
+
+.MyCalendarMobile .ajax__calendar_months, .MyCalendarMobile .ajax__calendar_years {
+	}
+
+.MyCalendarMobile .ajax__calendar_other .ajax__calendar_day,
+.MyCalendarMobile .ajax__calendar_other .ajax__calendar_month,
+.MyCalendarMobile .ajax__calendar_other .ajax__calendar_year { /* mobile ajax calendar non-current days */
+	color: #bbbbbb;
+	font-family: Arial, Verdana, Geneva, ms sans serif;
+	font-size: 4.0em;
+	}
+
+.MyCalendarMobile .ajax__calendar_hover .ajax__calendar_day,
+.MyCalendarMobile .ajax__calendar_hover .ajax__calendar_month,
+.MyCalendarMobile .ajax__calendar_hover .ajax__calendar_year { /* mobile ajax calendar today/selected day hover */
+	color: #1c523e;
+	}
+
+.MyCalendarMobile .ajax__calendar_active .ajax__calendar_day,
+.MyCalendarMobile .ajax__calendar_active .ajax__calendar_month,
+.MyCalendarMobile .ajax__calendar_active .ajax__calendar_year { /* mobile ajax calendar current day */
+	color: #1c523e;
+	}
+	
+.mobileRecaptchaImage img { 
+	height: 300px; 
+	width: 640px; 
+	margin: 0px; 
+	padding: 0px; 
+	}
+
+.mobileRecaptchaContainer { 
+	height: 300px;
+	width: 640px;
+	margin: 0px; 
+	padding: 0px; 
+	}
+
+
+/**********************************************************************
+ * Gallery Styles                                                     * 
+ **********************************************************************/
+.galleryttc { /* gallery data grid data container */
+	background-color: #ffffff;
+	font-family: Verdana, Arial, Geneva, ms sans serif;
+	font-size: 11px;
+	padding: 20px;
+	padding-left: 0px;
+	text-align: center;
+	vertical-align: top;
+	}
+
+.gallerytic { /* gallery data grid icon cell */
+	background-color: #ffffff;
+	padding: 0px;
+	padding-left: 8px;
+	padding-top: 24px; 
+	vertical-align: top;    
+	width: 16px;       
+	}
+
+.galleryttl { /* gallery data grid page/grand totals cell */
+	background-color: #ffffff;
+	border-bottom: 1px solid #d7d7d7;
+	font-family: Verdana, Geneva, ms sans serif;
+	font-size: 11px;
+	padding: 5px;
+	text-align: left;
+	vertical-align: top;
+	}
+
+
+/**********************************************************************
+ * Import Wizard Styles                                               * 
+ **********************************************************************/
+.importWizardpBack { /* import wizard body */
+	}
+
+.importWizardmarginTL { /* import wizard page centering top left margin */
+	}
+
+.importWizardmarginTR { /* import wizard page centering top right margin */
+	}
+
+.importWizardmarginL { /* import wizard page centering left margin */
+	}
+
+.importWizardmarginR { /* import wizard page centering right margin */
+	}
+
+.importWizardmarginBL { /* import wizard page centering bottom left margin */
+	}
+
+.importWizardmarginBR { /* import wizard page centering bottom right margin */
+	}
+
+.importWizardpcT { /* import wizard page container top center edge (header container) */
+	}
+
+.importWizardpcC { /* import wizard page container center (contents of page container) */
+	}
+
+.importWizardpcB { /* import wizard page container bottom center edge (footer container) */
+	}
+
+.importWizarddv { /* panel container (includes panel header) */
+	background-color: #ffffff;
+	border-radius: 4px;
+	box-shadow: 0px 0px 3px #bbbbbb;
+	margin-bottom: 10px;
+	padding-bottom: 16px;
+	padding-left: 16px;
+	padding-right: 16px;
+	padding-top: 6px;
+	text-align: left;
+	vertical-align: top;
+	}
+
+.importWizarddBody { /* panel content container (excludes panel header) */ 
+	}
+
+
+/**********************************************************************
+ * Quick Popup Styles                                                 *
+ **********************************************************************/
+.QDialog { /* quick popup container */ 
+	background-color: #ffffff;
+	border-radius: 4px;
+	box-shadow: 0px 0px 6px #333333;
+	left: 200px;
+	margin: 0px;
+	overflow: hidden;
+	position: absolute;
+	top: 300px;
+	z-index: 1000;
+	}
+
+.QpBack { /* body of page displayed within quick popup */
+	margin: 0px;
+	}
+
+/**********************************************************************
+ * Quick Selector Styles                                              *
+ **********************************************************************/
+div.modal { /* modal popup parent overlay */
+	filter: alpha(opacity=30);
+	-moz-opacity: 0.3;
+	opacity: 0.3;
+	background-color: #000000;
+	height: 100%;
+	position: fixed;
+	top: 0px;
+	left: 0px;
+	width: 100%;
+	z-index: 900;
+	}
+
+.themeButtonMini { /* small theme button */
+	background: -moz-linear-gradient( center top, #ffffff 5%, #c9c9c9 100% );
+	background: -webkit-gradient( linear, left top, left bottom, color-stop(0.05, #ffffff), color-stop(1, #c9c9c9) );
+	background: -ms-linear-gradient(top, #ffffff 5%, #c9c9c9 100%);
+	border: 1px solid #acacac;
+	border-radius: 3px;
+	display: inline-block;
+    	filter: progid:DXImageTransform.Microsoft.gradient(startColorStr='#ffffff', endColorStr='#c9c9c9');
+	padding-bottom: 2px; 
+	padding-left: 4px; 
+	padding-right: 4px; 
+	padding-top: 2px; 
+	white-space: nowrap;
+	}
+
+.themeButtonMini:hover { /* small theme button hover state */
+	background: -webkit-gradient( linear, left top, left bottom, color-stop(0.05, #ffffff), color-stop(1, #c9c9c9) );
+	background: -moz-linear-gradient( center top, #ffffff 5%, #c9c9c9 100% );
+	background: -ms-linear-gradient(top, #ffffff 5%, #c9c9c9 100%);
+	border: 1px solid #acacac;
+	box-shadow: 0px 0px 1px #bbbbbb;
+	color: #1c523e;
+	filter: progid:DXImageTransform.Microsoft.gradient(startColorStr='#ffffff', endColorStr='#c9c9c9');
+	white-space: nowrap;
+	}
+
+.themeButtonMini a.button_link, .themeButtonMini a.button_link:hover, .themeButtonMini a, .themeButtonMini a:hover { /* link within small theme button */ 
+	color: #1c523e;
+	font-family: Verdana, Arial, Geneva, ms sans serif;
+	font-size: 11px;
+	font-weight: normal;
+	text-decoration: none;
+	text-transform: none;
+	}
+
+.QSContainer { /* quick selector container */
+	}
+
+.QSContainer .panelSearchBox { /* quick selector search box */
+	width: 280px;
+	}
+
+.QSContainer .Search_Input { /* quick selector search box text */
+	width: 200px;
+	}
+
+.QSContainer .Search_InputHint { /* quick selector search box hint */
+	width: 200px;
+	}
+
+.QSSize { /* iframe within which quick selector is displayed */ 
+	height: 278px;
+	width: 330px;
+	}
+
+.QSdh { /* quick selector title bar */
+	background-color: #bfd19c;
+	border-bottom: 1px solid #1c523e;
+	padding-left: 10px;
+	padding-right: 10px;
+	padding-top: 6px;
+	height: 33px;
+	left: 0px;
+	position: fixed;
+	top: 0px;
+	width: 100%;
+	z-index: 3;
+	}
+
+.QSContainer .QSscrollRegion { /* quick selector scrolled region */
+	height: 200px;
+	left: 0px;
+	overflow: auto;
+	position: absolute;
+	top: 40px;
+	width: 100%;
+	z-index: 2;	
+	}
+
+.QSfooter { /* quick selector footer bar */
+	background-color: #bfd19c;
+	height: 38px;
+	left: 0px;
+	padding-top: 2px;
+	position: fixed;
+	top: 240px;
+	width: 100%;
+	z-index: 3;
+	}
+
+.QSButtonContainer { /* quick selector clear/add button container */ 
+	padding-left: 10px;
+	width: 100px;
+	}
+
+.QSButtonContainer .themeButton { /* quick selector theme button container */
+	padding: 1px;
+	}
+
+.QSCloseButtonContainer { /* quick selector close button container */
+	width: 54px;
+	}
+
+.QSPaginationContainer { /* quick selector pagination container */
+	padding-right: 10px;
+	width: 210px;
+	}
+
+.QSPageSizeButton { /* quick selector page size button */
+	display: none;
+	}
+
+.QStr { /* quick selector row */
+	background-color: #ffffff;
+	}
+
+.QStr:hover, .QStrHighlighted, .QStrHighlighted:hover, .QStrSelected:hover { /* quick selector hover/highlighted state */
+	background-color: #e3eecc;
+	}
+
+.QStrSelected { /* quick selector selected state */
+	background-color: #f0f8de;
+	}
+
+.QSthc { /* quick selector header cell */
+	color: #555555;
+	font-family: Verdana, Arial, Geneva, ms sans serif;
+	font-size: 12px;
+	font-weight: bold;
+	overflow: hidden;
+	padding-bottom: 2px;
+	padding-left: 10px;
+	padding-right: 10px;
+	padding-top: 12px;
+	text-overflow: ellipsis;
+	vertical-align: top;
+	white-space: nowrap;
+	}
+
+.QSthc a { /* link within quick selector header cell */
+	color: #1c523e;
+	font-weight: bold;
+	text-decoration: none;
+	}
+
+.QSthc a:hover { /* hover state of link within quick selector header cell */
+	}
+
+.QSthc a.button_link { /* link with class button_link within quick selector header cell */
+	color: #1c523e;
+	font-weight: bold;
+	text-decoration: none;
+	}
+
+.QSthc a.button_link:hover { /* hover state of link with class button_link within quick selector header cell */
+	}
+
+.QSttc { /* quick selector cell */
+	border-bottom: 1px dotted #eeeeee;
+	color: #666666;
+	font-family: Verdana, Arial, Geneva, ms sans serif;
+	font-size: 12px;
+	height: 14.5px;
+	padding-bottom: 2px;
+	padding-left: 10px;
+	padding-right: 10px;
+	padding-top: 2px;
+	vertical-align: top;
+	white-space: nowrap;
+	}
+
+.QSttc div { /* quick selector cell content container (used for long text truncation) */
+	overflow: hidden;
+	text-overflow: ellipsis;
+	width: 290px;
+	}
+
+.QSttc a { /* link within quick selector cell */
+	color: #1c523e;
+	text-decoration: none;
+	}
+
+.QSttc a:hover { /* hover state of link within quick selector cell */
+	}
+
+.QSttc a.button_link { /* link with class button_link within quick selector cell */
+	color: #1c523e;
+	text-decoration: none;
+	}
+
+.QSttc a.button_link:hover { /* hover state of link with class button_link within quick selector cell */
+	}
+
+
+/**********************************************************************
+ * Quick (Add/Edit) Page Styles                                       *
+ **********************************************************************/
+.QSContainer .dv { /* quick page panel */
+	border: none;
+	box-shadow: none;
+	width: 100%;
+	}
+
+.QSContainer .dh { /* quick page panel header */
+	background-color: #bfd19c;
+	background-image: none;
+	border-bottom: 1px solid #1c523e;
+	height: 32px;
+	left: 0px;
+	position: fixed;
+	top: 0px;
+	width: 100%; 
+	z-index: 3;
+	}
+
+.QSContainer .dhb, .QSContainer .dhel, .QSContainer .dher { /* quick page panel header background */
+	background-image: none;
+	padding-bottom: 6px;
+	padding-top: 2px;
+	}
+
+.QSContainer .scrollRegion { /* quick page scrolled region */
+	height: 428px;
+	left: 0px;
+	overflow: auto;
+	position: absolute;
+	top: 32px;
+	width: 100%;
+	z-index: 2;	
+	}
+
+.QSContainer .scrollRegion div { /* quick page scroll region margin */
+	margin: 4px;
+	}
+
+.QPageSize { /* dimensions of quick page */
+	height: 500px;
+	width: 780px;
+	}
+
+.QPPageButtonsContainer { /* quick page page buttons (save, cancel) container */
+	background-color: #bfd19c;
+	height: 36px;
+	left: 0px;
+	padding-left: 10px;
+	padding-right: 10px;
+	padding-top: 8px;
+	position: fixed;
+	top: 460px;
+	width: 100%;
+	z-index: 3;
+	}
+
+.QPCloseBarButtonContainer { /* quick page close button container */
+	position: absolute;
+	right: 0px;
+	z-index: 4;
+	}
+
+.QPCloseBarButtonPosition { /* quick page close button position */
+	padding-right: 10px;
+	padding-top: 8px;
+	}
+
+.QPContainerPanelPadding { /* quick page panel position */
+	padding: 0px;
+	}
+
+
+/**********************************************************************
+ * Hidden Control Styles                                              * 
+ **********************************************************************/
+.hide { /* hidden control (instead of using display:none), e.g., used in QuickSelector tab navigation */
+	height: 0px;
+	width: 0px;
+	}
+
